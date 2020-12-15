@@ -24,7 +24,7 @@
 </head>
 <body>
 	<div id="app">
-		<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+		{{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
 			<div class="container">
 				<a class="navbar-brand" href="{{ url('/') }}">
 					{{ config('app.name', 'Laravel') }}
@@ -73,7 +73,49 @@
 				</ul>
 			</div>
 		</div>
+	</nav> --}}
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Attractions</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Plan du parc</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">My Game</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Boutique</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Se préparer</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Comment venir? </a></li>
+							<li><a class="dropdown-item" href="#">Tarifs & Billeterie</a></li>
+							<li><a class="dropdown-item" href="#">Calendrier</a></li>
+							<li><a class="dropdown-item" href="#">Nos Restaurants</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Compte</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Français
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">English</a></li>
+							<li><a class="dropdown-item" href="#">Español</a></li>
+						</ul>
+				</ul>
+			</div>
+		</div>
 	</nav>
+
 
 	<main class="py-4">
 		@yield('content')
