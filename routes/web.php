@@ -24,3 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('Restaurant', 'RestaurantController');
 Route::resource('Restriction', 'RestrictionController');
 Route::resource('Attraction', 'AttractionController');
+Route::resource('Avatar', 'AvatarController');
