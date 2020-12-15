@@ -25,3 +25,4 @@ Route::resource('Restaurant', 'RestaurantController');
 Route::resource('Restriction', 'RestrictionController');
 Route::resource('Attraction', 'AttractionController');
 Route::resource('Avatar', 'AvatarController');
+Route::resource('User', 'UserController');
