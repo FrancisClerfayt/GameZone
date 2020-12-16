@@ -73,46 +73,110 @@
 		</div>
 	</nav> --}}
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container-fluid">
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="{{ route('Attraction.index') }}">Attractions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Plan du parc</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">My game</a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="{{ route('home') }}">
+						<img src="{{ asset('images/logo_gamezone.png') }}" width="200" height="120" alt="" loading="lazy">
+					</a>
+				</li>
+
+
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#">Boutique</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Préparer ma visite
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Comment venir?</a>
+						<a class="dropdown-item" href="#">Tarifs & Billeterie</a>
+						<a class="dropdown-item" href="#">Calendrier</a>
+						<a class="dropdown-item" href="{{ route('Restaurant.index') }}">Nos Restaurants</a>
+					</div>
+				</li>
+{{-- 
+
+				<ul class="navbar-nav ml-auto">
+					<!-- Authentication Links -->
+
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Attractions</a>
+						<a class="nav-link" href="{{ route('') }}">Mon compte</a>
 					</li>
+
+					@guest
 					<li class="nav-item">
-						<a class="nav-link" href="#">Plan du parc</a>
+						<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
 					</li>
+					@if (Route::has('register'))
 					<li class="nav-item">
-						<a class="nav-link" href="#">My Game</a>
+						<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Boutique</a>
-					</li>
+					@endif
+					@else
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Se préparer</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Comment venir? </a></li>
-							<li><a class="dropdown-item" href="#">Tarifs & Billeterie</a></li>
-							<li><a class="dropdown-item" href="#">Calendrier</a></li>
-							<li><a class="dropdown-item" href="#">Nos Restaurants</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Compte</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Français
+						<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+							{{ Auth::user()->name }}
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#">English</a></li>
-							<li><a class="dropdown-item" href="#">Español</a></li>
-						</ul>
-				</ul>
-			</div>
+						
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="{{ route('logout') }}"
+							onclick="event.preventDefault();
+							document.getElementById('logout-form').submit();">
+							{{ __('Logout') }}
+						</a>
+						
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+							@csrf
+						</form>
+					</div>
+				</li>
+				@endguest
+			</ul>
+ --}}
+
+
+				
+				{{-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Français
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">English</a>
+						<a class="dropdown-item" href="#">Español</a>
+					</div>
+				</li> --}}
+
+				<select class=form-control>
+					<option value=un>Français</option>
+					<option value=deux>English</option>
+					<option value=trois>Español</option>
+				 </select>	
+
+
+			</ul>
 		</div>
 	</nav>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 class="display-4">Fluid jumbotron</h1>
+			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+		</div>
+	</div>
 
 
 
@@ -120,6 +184,27 @@
 	<main class="py-4">
 		@yield('content')
 	</main>
+
+	<footer>
+		<div class="container">
+			<!-- Content here -->
+			<p>Horaires du parc :</p>
+			<p>Du lundi au jeudi : 9h-19h</p>
+			<p>Du vendredi au samedi : 9h-20h</p>
+			<p>Le dimanche : 9h – 18h</p>
+			<p>Fermé tous les premiers mardis du mois</p>
+			<p>Besoin d’aide  08 59 62 08 59</p>
+
+		</div>
+		<div>
+			<a class="nav-link" href="#">A propos du Parc</a>
+			<a class="nav-link" href="#">On rescrute</a>
+			<a class="nav-link" href="#">Dans la presse</a>
+			<a class="nav-link" href="#">Nous contacter</a>
+		</div>
+	</footer>
+
+
 </div>
 </body>
-</html>
+</html> 
