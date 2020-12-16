@@ -75,7 +75,7 @@
 		</div>
 	</nav> --}}
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
@@ -96,7 +96,7 @@
 				</li>
 
 
-				
+
 				<li class="nav-item">
 					<a class="nav-link" href="#">Boutique</a>
 				</li>
@@ -111,7 +111,7 @@
 						<a class="dropdown-item" href="{{ route('Restaurant.index') }}">Nos Restaurants</a>
 					</div>
 				</li>
-{{-- 
+{{--
 
 				<ul class="navbar-nav ml-auto">
 					<!-- Authentication Links -->
@@ -134,14 +134,14 @@
 						<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
 							{{ Auth::user()->name }}
 						</a>
-						
+
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="{{ route('logout') }}"
 							onclick="event.preventDefault();
 							document.getElementById('logout-form').submit();">
 							{{ __('Logout') }}
 						</a>
-						
+
 						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
 							@csrf
 						</form>
@@ -152,7 +152,7 @@
  --}}
 
 
-				
+
 				{{-- <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Français
@@ -167,7 +167,7 @@
 					<option value=un>Français</option>
 					<option value=deux>English</option>
 					<option value=trois>Español</option>
-				 </select>	
+				 </select>
 
 
 			</ul>
@@ -179,6 +179,7 @@
 			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
 		</div>
 	</div>
+
 
 
 	<main class="py-4">
@@ -207,4 +208,4 @@
 
 </div>
 </body>
-</html> 
+</html>
