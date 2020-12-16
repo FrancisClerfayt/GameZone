@@ -6,24 +6,25 @@
 }
 
 .container_restaurant {
-    margin: 4em 6em;
+    margin: 4em 6%;
 }
 .items_restaurant {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 3em;
     background-color: #dcd4d4;
     padding: 2em;
     box-shadow: black 5px outside;
     margin-bottom: 2em;
+    /* min-width: 28em; */
 }
 
 
 .img_r_left {
     width: 47%;
-    min-width: 25em;
+    min-width: 15em;
     height: ;
     border-bottom-left-radius: 3em;
     border-top-left-radius: 3em;
@@ -43,4 +44,10 @@
     text-decoration: none;
     border-radius: .5em;
 
+}
+@media screen and (max-width: 840px){
+    .img_r_left {
+        border-radius: 3em;
+        margin-bottom: 1.5em;
+    }
 }
