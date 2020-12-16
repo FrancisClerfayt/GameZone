@@ -6,6 +6,10 @@
 h2 {
   font-size: 36px;
 }
+
+h4 {
+  color: #F6CD40;
+}
 /*INDEX*/
 
 .presentation {
@@ -41,4 +45,18 @@ h2 {
 
  .actuality {
    font-size: 18px;
+ }
+
+ /*Footer*/
+
+ footer {
+   background-color: #1C1F3D;
+ }
+
+ .text_footer {
+   color: #F6CD40;
+ }
+
+ .logo a {
+   color: #F6CD40;
  }

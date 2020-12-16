@@ -14,6 +14,7 @@
 
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -78,6 +79,42 @@
 	<main class="py-4">
 		@yield('content')
 	</main>
+	<footer>
+		<div class="text-center">
+			<h4 class="text_footer">Horaires du parc :</h4>
+			<p class="text_footer">Du lundi au jeudi : 9h-19h</p>
+			<p class="text_footer">Du vendredi au samedi : 9h-20h</p>
+			<p class="text_footer">Le dimanche : 9h – 18h</p>
+			<p class="text_footer">Fermé tous les premiers mardis du mois</p>
+			<p class="text_footer">Besoin d'aide ? 08 59 62 08 59</p>
+		</div>
+		<div class="text-center">
+			<h4 class="text_footer">Suivez-nous !</h4>
+			<div class="logo">
+				<a href="#" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+				<a href="#" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+			</div>
+		</div>
+		<div class="text-center">
+			<ul>
+				<li><a class="text_footer" href="#">A propos du parc</a></li>
+				<li><a class="text_footer" href="#">On recrute</a></li>
+				<li><a class="text_footer" href="#">Dans la presse</a></li>
+				<li><a class="text_footer" href="#">Nous contacter</a></li>
+			</ul>
+		</div>
+		<div class="text-center">
+			<p><a class="text_footer" href="#">Conditions de vente</a></p>
+			<p><a class="text_footer" href="#">© Copyright 2020 GameZone</a></p>
+			<p><a class="text_footer" href="#">Mentions Légales</a></p>
+
+
+
+
+		</div>
+	</footer>
 </div>
 </body>
 </html>
