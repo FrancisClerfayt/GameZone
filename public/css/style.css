@@ -1,0 +1,46 @@
+/* le page restaurants commence ci-desous */
+.first_titre_r {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2em auto ;
+}
+
+.container_restaurant {
+    margin: 4em 6em;
+}
+.items_restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 3em;
+    background-color: #dcd4d4;
+    padding: 2em;
+    box-shadow: black 5px outside;
+    margin-bottom: 2em;
+}
+
+
+.img_r_left {
+    width: 47%;
+    min-width: 25em;
+    height: ;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
+}
+.restaurant_right {
+    width: 45%;
+    min-width: 25em;
+    text-align: center;
+}
+.restaurant_text {
+    margin: 2em auto;
+}
+.restaurant_button {
+    color: black;
+    background-color: yellow;
+    padding: .5em 2em;
+    text-decoration: none;
+    border-radius: .5em;
+
+}
