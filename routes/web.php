@@ -26,3 +26,5 @@ Route::resource('Restriction', 'RestrictionController');
 Route::resource('Attraction', 'AttractionController');
 Route::resource('Avatar', 'AvatarController');
 Route::resource('User', 'UserController');
+
+Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
