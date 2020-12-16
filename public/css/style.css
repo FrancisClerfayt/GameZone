@@ -6,6 +6,26 @@
 }
 
 .text_recrute {
-    margin: 2em 8%;
-    
+    margin: 0 8%;
+    padding: 2em 2em 6em;
+    background-color: #FFF3F3;
+}
+.contact_recrute {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: initial;
+    background-color: #FFF3F3;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 2em;
+}
+
+.icon_recrute {
+    width: 2.5em;
+    margin-right: 1.5em;
+}
+.gril_footer {
+    margin: 12em auto 0 5em;
 }
