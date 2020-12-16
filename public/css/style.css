@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*INDEX*/
+.logo_gamezone {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+ .offer {
+   color: #1C1F3D;
+ }
+
+ .offer_card {
+ }
+
+ .title_card {
+   background-color: #F6CD40;
+ }
