@@ -42,12 +42,13 @@ class RestaurantController extends Controller
 	/**
 	* Display the specified resource.
 	*
-	* @param  \App\Restaurant  $restaurant
+	* @param  int $id
 	* @return \Illuminate\Http\Response
 	*/
-	public function show(Restaurant $restaurant)
+	public function show($id)
 	{
-		//
+		$restaurant = Restaurant::find($id);
+		return view('restaurant.show',['restaurant' => $restaurant]);
 	}
 	
 	/**
