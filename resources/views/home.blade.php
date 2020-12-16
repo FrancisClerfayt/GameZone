@@ -2,22 +2,13 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+  <blockquote class="blockquote">
+    <p class="text-end">
+      GEEK CYBERCENTER est une SAS au capital de 45 824 123 euros. Il s’agit d’un groupe possédant plusieurs parcs d’attractions dans le monde comme : BATTLE KART VR, FORTNITE
+      ADVENTURE, PUBG SURVIVOR. En septembre 2019, le groupe a ouvert un nouveau parc : GAME ZONE. Ce dernier sera le premier parc d’attraction au monde entièrement dédié à l’univers des jeux-vidéo.
+    </p>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+  </blockquote>
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 @endsection
