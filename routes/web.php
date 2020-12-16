@@ -30,3 +30,5 @@ Route::resource('User', 'UserController');
 Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
 Route::resource('Product', 'ProductController');
 Route::resource('Cart', 'CartController');
+
+Route::get('/terms_of_sales','TermsOfSales@index')->name('terms_of_sales');
