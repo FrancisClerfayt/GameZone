@@ -42,3 +42,43 @@ h2 {
  .actuality {
    font-size: 18px;
  }
+
+/*  page info start here */
+.first_titre_info {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 3em 3%;
+}
+.covid_text {
+  color: red;
+  text-align: center;
+  margin: 3em 3%;
+}
+.info_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: #F6CD40;
+  padding: 2em;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 1em;
+}
+.info_item {
+  margin-left: 9%;
+}
+.text_after_info,
+.last_text_info {
+  text-align: center;
+  margin: 4em 5%;
+}
+.last_text_info {
+  font-size: 1.5em;
+}
+
+.gril_footer {
+  margin: 8em auto 0 5em 6%;
+  }
