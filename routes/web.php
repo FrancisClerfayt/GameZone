@@ -28,3 +28,5 @@ Route::resource('Avatar', 'AvatarController');
 Route::resource('User', 'UserController');
 
 Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
+Route::resource('Product', 'ProductController');
+Route::resource('Cart', 'CartController');
