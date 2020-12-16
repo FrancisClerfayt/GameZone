@@ -6,6 +6,28 @@
 h2 {
   font-size: 36px;
 }
+/*header*/
+
+.navbar {
+  background-color: #1C1F3D;
+}
+
+.menu {
+  color: #F6CD40;
+}
+
+.logo_header {
+  width: 24%;
+}
+
+.nav_menu {
+  margin: auto;
+}
+
+.jumbotron_image {
+  width: 100%;
+}
+
 /*INDEX*/
 
 .presentation {
@@ -22,23 +44,24 @@ h2 {
   margin: 30px 0 30px 0;
 }
 
- .offer {
-   color: #1C1F3D;
-   font-size: 24px;
- }
+.offer {
+  color: #1C1F3D;
+  font-size: 24px;
+}
 
- .offer_card {
-   margin-bottom: 30px;
- }
+.offer_card {
+  margin-bottom: 30px;
+}
 
- .title_card {
-   background-color: #F6CD40;
- }
+.title_card {
+  background-color: #F6CD40;
+}
 
- .best_attraction {
-   margin: 30px 0 30px 0;
- }
+.best_attraction {
+  margin: 30px 0 30px 0;
+}
 
- .actuality {
-   font-size: 18px;
- }
+.actuality {
+  font-size: 18px;
+}
+/*fin index*/

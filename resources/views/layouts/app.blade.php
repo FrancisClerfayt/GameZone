@@ -24,7 +24,7 @@
 </head>
 <body>
 	<div id="app">
-		{{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+		<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
 			<div class="container">
 				<a class="navbar-brand" href="{{ url('/') }}">
 					{{ config('app.name', 'Laravel') }}
@@ -73,137 +73,89 @@
 				</ul>
 			</div>
 		</div>
-	</nav> --}}
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-light nav-fill">
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="{{ route('Attraction.index') }}">Attractions</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Plan du parc</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">My game</a>
-				</li>
-
-
-				<li class="nav-item">
-					<a class="nav-link" href="{{ route('home') }}">
-						<img src="{{ asset('images/logo_gamezone.png') }}" width="200" height="120" alt="" loading="lazy">
-					</a>
-				</li>
-
-
-
-				<li class="nav-item">
-					<a class="nav-link" href="#">Boutique</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Préparer ma visite
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Comment venir?</a>
-						<a class="dropdown-item" href="#">Tarifs & Billeterie</a>
-						<a class="dropdown-item" href="#">Calendrier</a>
-						<a class="dropdown-item" href="{{ route('Restaurant.index') }}">Nos Restaurants</a>
-					</div>
-				</li>
-{{--
-
-				<ul class="navbar-nav ml-auto">
-					<!-- Authentication Links -->
-
-					<li class="nav-item">
-						<a class="nav-link" href="{{ route('') }}">Mon compte</a>
-					</li>
-
-					@guest
-					<li class="nav-item">
-						<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-					</li>
-					@if (Route::has('register'))
-					<li class="nav-item">
-						<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-					</li>
-					@endif
-					@else
-					<li class="nav-item dropdown">
-						<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-							{{ Auth::user()->name }}
-						</a>
-
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="{{ route('logout') }}"
-							onclick="event.preventDefault();
-							document.getElementById('logout-form').submit();">
-							{{ __('Logout') }}
-						</a>
-
-						<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-							@csrf
-						</form>
-					</div>
-				</li>
-				@endguest
-			</ul>
- --}}
-
-
-
-				{{-- <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Français
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">English</a>
-						<a class="dropdown-item" href="#">Español</a>
-					</div>
-				</li> --}}
-
-				<select class=form-control>
-					<option value=un>Français</option>
-					<option value=deux>English</option>
-					<option value=trois>Español</option>
-				 </select>
-
-
-			</ul>
-		</div>
 	</nav>
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Fluid jumbotron</h1>
-			<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-		</div>
+
+	<nav class="navbar nav nav-fill">
+		<a class="menu nav-link nav-item" href="#">Attractions</a>
+		<a class="menu nav-link nav-item" href="#">Le plan</a>
+		<a class="menu nav-link nav-item" href="#">Infos</a>
+		<a class="menu nav-link nav-item" href="#">My game</a>
+		<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="">
+		<a class="menu nav-link nav-item" href="#">Boutique</a>
+		<li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Se préparer a votre visite
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Action</a></li>
+	            <li><a class="dropdown-item" href="#">Another action</a></li>
+	            <li><hr class="dropdown-divider"></li>
+	            <li><a class="dropdown-item" href="#">Something else here</a></li>
+	          </ul>
+	        </li>
+
+		<a class="menu nav-link nav-item" href="#">Mon compte</a>
+	</nav>
+
+	@guest
+	<li class="nav-item">
+		<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+	</li>
+	@if (Route::has('register'))
+	<li class="nav-item">
+		<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+	</li>
+
+	@else
+	<li class="nav-item dropdown">
+		<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+			{{ Auth::user()->name }}
+		</a>
+
+		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="{{ route('logout') }}"
+			onclick="event.preventDefault();
+			document.getElementById('logout-form').submit();">
+			{{ __('Logout') }}
+		</a>
+		@endif
+
 	</div>
+</li>
+@endguest
+</ul>
+</div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container-fluid">
+		<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="">
+	</div>
+</div>
 
 
 
-	<main class="py-4">
-		@yield('content')
-	</main>
+<main class="py-4">
+	@yield('content')
+</main>
 
-	<footer>
-		<div class="container">
-			<!-- Content here -->
-			<p>Horaires du parc :</p>
-			<p>Du lundi au jeudi : 9h-19h</p>
-			<p>Du vendredi au samedi : 9h-20h</p>
-			<p>Le dimanche : 9h – 18h</p>
-			<p>Fermé tous les premiers mardis du mois</p>
-			<p>Besoin d’aide  08 59 62 08 59</p>
+<footer>
+	<div class="container">
+		<!-- Content here -->
+		<p>Horaires du parc :</p>
+		<p>Du lundi au jeudi : 9h-19h</p>
+		<p>Du vendredi au samedi : 9h-20h</p>
+		<p>Le dimanche : 9h – 18h</p>
+		<p>Fermé tous les premiers mardis du mois</p>
+		<p>Besoin d’aide  08 59 62 08 59</p>
 
-		</div>
-		<div>
-			<a class="nav-link" href="#">A propos du Parc</a>
-			<a class="nav-link" href="#">On rescrute</a>
-			<a class="nav-link" href="#">Dans la presse</a>
-			<a class="nav-link" href="#">Nous contacter</a>
-		</div>
-	</footer>
+	</div>
+	<div>
+		<a class="nav-link" href="#">A propos du Parc</a>
+		<a class="nav-link" href="#">On rescrute</a>
+		<a class="nav-link" href="#">Dans la presse</a>
+		<a class="nav-link" href="#">Nous contacter</a>
+	</div>
+</footer>
 
 
 </div>
