@@ -488,3 +488,10 @@ footer {
         margin-bottom: 1.5em;
     }
 }
+
+/* page restaurant detail start */
+.img_i_left {
+    width: 47%;
+    min-width: 15em;
+   
+}
