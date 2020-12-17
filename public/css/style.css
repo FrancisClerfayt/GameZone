@@ -6,6 +6,10 @@
 h2 {
   font-size: 36px;
 }
+
+h4 {
+  color: #F6CD40;
+}
 /*INDEX*/
 
 .presentation {
@@ -43,11 +47,32 @@ h2 {
    font-size: 18px;
  }
 
+ /*Footer*/
+ footer {
+   background-color: #1C1F3D;
+ }
 
+ .text_footer {
+   color: #F6CD40;
+ }
 
+ .logo a {
+   color: #F6CD40;
+ }
 
-/*inscription*/
+.timetable {
+  padding: 30px 0 40px 0;
+}
 
-.image_avatar {
-  width: 40%;
+.follow {
+  padding-top: 70px;
+}
+
+.icon {
+  padding: 30px 10px 0 0;
+}
+
+.info {
+  padding-top: 40px;
+  line-height: 30px;
 }
