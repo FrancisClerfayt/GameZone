@@ -126,10 +126,7 @@
 </div>
 </nav>
 
-<p class="tickets">
-	<img src="{{ asset('images/icon_ticket.png')}}" alt="Ticket">
-	Tickets
-</p>
+
 <p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
 <div class="jumbotron jumbotron-fluid">
 	<div class="container-fluid">
