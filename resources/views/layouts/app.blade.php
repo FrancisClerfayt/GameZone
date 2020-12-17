@@ -79,7 +79,7 @@
 	<main class="py-4">
 		@yield('content')
 	</main>
-	<footer>
+	<footer class="w-100">
 		<div class="row">
 			<div class="timetable text-center col-sm-12 col-md-12 col-lg-4">
 				<h4 class="text_footer">Horaires du parc :</h4>
