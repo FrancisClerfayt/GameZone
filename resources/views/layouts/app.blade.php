@@ -76,43 +76,71 @@
 		</div>
 	</nav>
 
-	<main class="py-4">
-		@yield('content')
-	</main>
-	<footer>
-		<div class="row">
-			<div class="timetable text-center col-sm-12 col-md-12 col-lg-4">
-				<h4 class="text_footer">Horaires du parc :</h4>
-				<p class="text_footer">Du lundi au jeudi : 9h-19h</p>
-				<p class="text_footer">Du vendredi au samedi : 9h-20h</p>
-				<p class="text_footer">Le dimanche : 9h – 18h</p>
-				<p class="text_footer">Fermé tous les premiers mardis du mois</p>
-				<p class="text_footer">Besoin d'aide ? 08 59 62 08 59</p>
-			</div>
-			<div class="text-center col-sm-12 col-md-12 col-lg-4 pt-lg-5 pt-sm-1">
-				<h4 class="text_footer">Suivez-nous !</h4>
-				<div class="logo">
-					<a href="#" target="_blank"><i class="icon fab fa-facebook fa-3x"></i></a>
-					<a href="#" target="_blank"><i class="icon fab fa-instagram fa-3x"></i></a>
-					<a href="#" target="_blank"><i class="icon fab fa-linkedin fa-3x"></i></a>
-					<a href="#" target="_blank"><i class="icon fab fa-youtube fa-3x"></i></a>
-				</div>
-			</div>
-			<div class="info text-center col-sm-12 col-md-12 col-lg-4">
-				<ul>
-					<li><a class="text_footer" href="#">A propos du parc</a></li>
-					<li><a class="text_footer" href="#">On recrute</a></li>
-					<li><a class="text_footer" href="#">Dans la presse</a></li>
-					<li><a class="text_footer" href="#">Nous contacter</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="row justify-content-around text-center">
-			<p><a class="text_footer col-lg-4" href="#">Conditions de vente</a></p>
-			<p><a class="text_footer col-lg-4" href="#">© Copyright 2020 GameZone</a></p>
-			<p><a class="text_footer col-lg-4" href="#">Mentions Légales</a></p>
-		</div>
-	</footer>
+	<nav class="navbar nav nav-fill">
+		<a class="menu nav-link nav-item" href="#">Attractions</a>
+		<a class="menu nav-link nav-item" href="#">Le plan</a>
+		<a class="menu nav-link nav-item" href="#">Infos</a>
+		<a class="menu nav-link nav-item" href="#">My game</a>
+		<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="">
+		<a class="menu nav-link nav-item" href="#">Boutique</a>
+		<div class="dropdown">
+	  <a class="menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    Se préparer à votre visite
+	  </a>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+	    <button class="dropdown-item" type="button">Se rendre au parc</button>
+	    <button class="dropdown-item" type="button">Tarifs et billeteries</button>
+	    <button class="dropdown-item" type="button">Horaires et calendrier</button>
+			<button class="dropdown-item" type="button">Nos restaurants</button>
+	  </div>
+	</div>
+		<a class="menu nav-link nav-item" href="#">Mon compte</a>
+	</nav>
+
+	@guest
+	<li class="nav-item">
+		<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+	</li>
+	@if (Route::has('register'))
+	<li class="nav-item">
+		<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+	</li>
+
+	@else
+	<li class="nav-item dropdown">
+		<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+			{{ Auth::user()->name }}
+		</a>
+
+		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="{{ route('logout') }}"
+			onclick="event.preventDefault();
+			document.getElementById('logout-form').submit();">
+			{{ __('Logout') }}
+		</a>
+		@endif
+
+	</div>
+</li>
+@endguest
+</ul>
+</div>
+</nav>
+
+
+<p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container-fluid">
+		<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
+	</div>
+</div>
+
+
+
+<main class="py-4">
+	@yield('content')
+</main>
+
 </div>
 </body>
 </html>
