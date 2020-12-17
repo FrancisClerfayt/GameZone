@@ -14,7 +14,7 @@ class AttractionController extends Controller
      */
     public function index()
     {
-        //
+        return view ('attraction.index');
     }
 
     /**

@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+h1 {
+  font-family: 'Commando';
+  text-align: center;
+}
+
 h2 {
   font-size: 36px;
 }
@@ -42,3 +47,21 @@ h2 {
  .actuality {
    font-size: 18px;
  }
+
+
+
+ .attractions_container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+
+ .attraction_card {
+   width: 45%;
+ }
+
+  .contagion {
+    background-image: url('../images/battle_kart.png');
+    background-size: cover;
+  }
+
