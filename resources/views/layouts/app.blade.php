@@ -14,7 +14,6 @@
 
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
@@ -44,16 +43,17 @@
 						<!-- Authentication Links -->
 						@guest
 						<li class="nav-item">
-							<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+							<a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
 						</li>
 						@if (Route::has('register'))
 						<li class="nav-item">
-							<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+							<a class="nav-link" href="{{ route('register') }}">{{ __('S\'enregistrer') }}</a>
 						</li>
 						@endif
 						@else
 						<li class="nav-item dropdown">
 							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+								<img src=" {{ asset(Auth::user()->avatar) }} " alt="user avatar">
 								{{ Auth::user()->name }}
 							</a>
 
