@@ -27,7 +27,7 @@
 		<nav class="navbar navbar-expand-md shadow-sm">
 			<div class="container">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-					<span class="navbar-toggler-icon"></span>
+					<span class="fas fa-bars ham"></span>
 				</button>
 				
 				<div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -157,5 +157,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/map.js"></script>
 </body>
 </html>
