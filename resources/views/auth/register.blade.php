@@ -10,13 +10,6 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <h2 class="text-center">Choisissez votre avatar</h2>
-                        <div class="">
-                          <img class="image_avatar col_6" src="{{ asset('images/avatar_eagle.png')}}" alt="logo aigle rouge">
-                          <img class="image_avatar col-6" src="{{ asset('images/avatar_pirate.png')}}" alt="logo pirate avec un couteau dans la bouche">
-                          <img class="image_avatar col-6" src="{{ asset('images/avatar_snake.png')}}" alt="logo serpent vert">
-                          <img class="image_avatar col-6" src="{{ asset('images/avatar_wolf.png')}}" alt="logo loue bleu">
-                        </div>
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
 
