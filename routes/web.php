@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/map', 'HomeController@map')->name('map');
 
 Route::resource('Restaurant', 'RestaurantController');
 Route::resource('Restriction', 'RestrictionController');
