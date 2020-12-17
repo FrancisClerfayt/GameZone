@@ -82,14 +82,17 @@
 		<a class="menu nav-link nav-item" href="#">My game</a>
 		<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="">
 		<a class="menu nav-link nav-item" href="#">Boutique</a>
-		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Se préparer à votre visite</a>
-	  <div class="dropdown-menu"> <!-- bloc déroulant -->
-	    <a class="dropdown-item" href="#">Service 1</a>
-	    <a class="dropdown-item" href="#">Autre service</a>
-	    <a class="dropdown-item" href="#">Dernier Service</a>
+		<div class="dropdown">
+	  <a class="menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    Se préparer à votre visite
+	  </a>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+	    <button class="dropdown-item" type="button">Se rendre au parc</button>
+	    <button class="dropdown-item" type="button">Tarifs et billeteries</button>
+	    <button class="dropdown-item" type="button">Horaires et calendrier</button>
+			<button class="dropdown-item" type="button">Nos restaurants</button>
 	  </div>
-
-
+	</div>
 		<a class="menu nav-link nav-item" href="#">Mon compte</a>
 	</nav>
 
@@ -122,9 +125,15 @@
 </ul>
 </div>
 </nav>
+
+<p class="tickets">
+	<img src="{{ asset('images/icon_ticket.png')}}" alt="Ticket">
+	Tickets
+</p>
+<p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
 <div class="jumbotron jumbotron-fluid">
 	<div class="container-fluid">
-		<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="">
+		<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
 	</div>
 </div>
 
