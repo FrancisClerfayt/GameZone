@@ -14,16 +14,16 @@
                          <img src=" {{asset($restaurant->image)}} " class="img_i_left" >
                          <div class="restaurant_right_i">  
                             <h3>FORMULE</h3>
-                            <p class="restaurant_text_i">{{$restaurant->menu_adult}}</p>
-                            <p class="restaurant_text_i">{{$restaurant->menu_child}}</p>
-                            <p class="text_restaurant_i">{{$restaurant->description}}</p>
-                            <a href=" {{ route('Restaurant.index') }} " class="restaurant_button">Retour</a>
-
+                            <p class="restaurant_text_i">Menu_adult: {{$restaurant->menu_adult}}€</p>
+                            <p class="restaurant_text_i">Menu_child: {{$restaurant->menu_child}}€</p>
                          </div>
                     </div>
                
              
-        +
+                    <p class="text_restaurant_i">{{$restaurant->description}}</p>
+                    <a href=" {{ route('Restaurant.index') }} " class="restaurant_button">Retour</a>    
     </div>
+
+    <img src="{{ URL::asset('images/gril.jpeg') }}" alt="" class="gril_footer">
 
 @endsection
