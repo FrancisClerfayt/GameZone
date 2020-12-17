@@ -60,3 +60,20 @@ h4 {
  .logo a {
    color: #F6CD40;
  }
+
+.timetable {
+  padding: 30px 0 40px 0;
+}
+
+.follow {
+  padding-top: 70px;
+}
+
+.icon {
+  padding: 30px 10px 0 0;
+}
+
+.info {
+  padding-top: 40px;
+  line-height: 30px;
+}
