@@ -82,17 +82,13 @@
 		<a class="menu nav-link nav-item" href="#">My game</a>
 		<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="">
 		<a class="menu nav-link nav-item" href="#">Boutique</a>
-		<li class="nav-item dropdown">
-	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	            Se préparer a votre visite
-	          </a>
-	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#">Action</a></li>
-	            <li><a class="dropdown-item" href="#">Another action</a></li>
-	            <li><hr class="dropdown-divider"></li>
-	            <li><a class="dropdown-item" href="#">Something else here</a></li>
-	          </ul>
-	        </li>
+		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Se préparer à votre visite</a>
+	  <div class="dropdown-menu"> <!-- bloc déroulant -->
+	    <a class="dropdown-item" href="#">Service 1</a>
+	    <a class="dropdown-item" href="#">Autre service</a>
+	    <a class="dropdown-item" href="#">Dernier Service</a>
+	  </div>
+
 
 		<a class="menu nav-link nav-item" href="#">Mon compte</a>
 	</nav>
