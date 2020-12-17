@@ -45,14 +45,19 @@ class RestaurantController extends Controller
 	* @param  int $id
 	* @return \Illuminate\Http\Response
 	*/
-	public function show($id)
+	/* public function show($id)
 	{
 		$restaurant = Restaurant::find($id);
 		return view('restaurant.show',['restaurant' => $restaurant]);
+	} */
+	public function show($id)
+	{
+		$restaurant = Restaurant::find($id);
+		return view('restaurant.show')->with('restaurant' , $restaurant);
 	}
 	
-	/**
-	* Show the form for editing the specified resource.
+	
+	/* Show the form for editing the specified resource.
 	*
 	* @param  \App\Restaurant  $restaurant
 	* @return \Illuminate\Http\Response
