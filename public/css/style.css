@@ -42,3 +42,64 @@ h2 {
  .actuality {
    font-size: 18px;
  }
+
+/*  page tarifs et tickets start */
+.first_titre_r {
+  text-align: center;
+  font-size: 1.5em;
+}
+.tarifs_text {
+  text-align: center;
+  margin: 4em auto;
+}
+.contenaire_tarifs {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+ /*  flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tarif_age {
+  margin-left: 7%;
+}
+
+.img_tarifs {
+  width: 70%;
+  min-width: 15em;  
+}
+.tarifs_items {
+  text-align: center;
+  
+}
+.text_intems {
+  position: absolute;
+  background-color: #662a60a1;
+  color: snow;
+  padding: .8em 2em;
+  width: 22.5%;
+  top: 18em;
+}
+
+.text_intems3 {
+  left: 70.5%;
+}
+.text_intems2 {
+  left: 38.6%;
+}
+.text_intems1 {
+  left:7%;
+}
+
+.tarifs_text_tiket {
+  text-align: center;
+  margin: 2em auto;
+}
+.text_tarifs_bottom {
+  text-align: center;
+  margin: 3em auto;
+}
+.gril_footer {
+  margin: 12em auto 0 5em;
+  }

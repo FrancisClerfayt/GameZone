@@ -32,3 +32,5 @@ Route::resource('Product', 'ProductController');
 Route::resource('Cart', 'CartController');
 
 Route::get('/terms_of_sales','TermsOfSales@index')->name('terms_of_sales');
+
+Route::resource('Tarifs', 'TarifsController');
