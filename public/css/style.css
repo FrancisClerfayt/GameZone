@@ -29,3 +29,47 @@
 .gril_footer {
     margin: 12em auto 0 5em;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+/*INDEX*/
+
+.presentation {
+  margin-top: 80px;
+  line-height: 30px;
+}
+
+.logo_gamezone {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.title_index {
+  margin: 30px 0 30px 0;
+}
+
+ .offer {
+   color: #1C1F3D;
+   font-size: 24px;
+ }
+
+ .offer_card {
+   margin-bottom: 30px;
+ }
+
+ .title_card {
+   background-color: #F6CD40;
+ }
+
+ .best_attraction {
+   margin: 30px 0 30px 0;
+ }
+
+ .actuality {
+   font-size: 18px;
+ }
