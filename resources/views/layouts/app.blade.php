@@ -139,27 +139,6 @@
 <main class="py-4">
 	@yield('content')
 </main>
-
-<footer>
-	<div class="container">
-		<!-- Content here -->
-		<p>Horaires du parc :</p>
-		<p>Du lundi au jeudi : 9h-19h</p>
-		<p>Du vendredi au samedi : 9h-20h</p>
-		<p>Le dimanche : 9h – 18h</p>
-		<p>Fermé tous les premiers mardis du mois</p>
-		<p>Besoin d’aide  08 59 62 08 59</p>
-
-	</div>
-	<div>
-		<a class="nav-link" href="#">A propos du Parc</a>
-		<a class="nav-link" href="#">On rescrute</a>
-		<a class="nav-link" href="#">Dans la presse</a>
-		<a class="nav-link" href="#">Nous contacter</a>
-	</div>
-</footer>
-
-
 </div>
 </body>
 </html>
