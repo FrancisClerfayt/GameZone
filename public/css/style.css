@@ -490,8 +490,28 @@ footer {
 }
 
 /* page restaurant detail start */
+
+.restaurant_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container_restaurant_i {
+    padding: 2em;
+    text-align: center;
+}
 .img_i_left {
     width: 47%;
     min-width: 15em;
    
 }
+.restaurant_right_i {
+    margin:3em auto auto 4em ;
+}
+.text_restaurant_i {
+    margin: 3em 6% 5em;
+}
+.gril_footer {
+    margin: 12em auto 0 5em;
+    }
