@@ -30,7 +30,6 @@
 					<span class="fas fa-bars ham"></span>
 				</button>
 				
-<<<<<<< HEAD
 				<div class="collapse navbar-collapse " id="navbarSupportedContent">
 					<ul class="navbar-nav row">
 						<li class="nav-item col">
@@ -76,16 +75,6 @@
 						
 						{{-- <a class="menu nav-link nav-item" href="#">Boutique</a> --}}
 						
-=======
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<!-- Left Side Of Navbar -->
-					<ul class="navbar-nav mr-auto">
-						
-					</ul>
-					
-					<!-- Right Side Of Navbar -->
-					<ul class="navbar-nav ml-auto">
->>>>>>> added html, css and js for map
 						<!-- Authentication Links -->
 						@guest
 						<a class="menu nav-item nav-link" href="{{ route('login') }}">
@@ -103,7 +92,6 @@
 							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
 								{{ Auth::user()->user_name }}
 							</a>
-<<<<<<< HEAD
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								@if (Auth::user()->isAdmin)
 								<a class="dropdown-item" href="">Test</a>
@@ -170,35 +158,5 @@
 		</footer>
 	</div>
 	<script src="js/map.js"></script>
-=======
-							
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="{{ route('logout') }}"
-								onclick="event.preventDefault();
-								document.getElementById('logout-form').submit();">
-								{{ __('Logout') }}
-							</a>
-							
-							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-								@csrf
-							</form>
-						</div>
-					</li>
-					@endguest
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
-	<main class="py-4">
-		@yield('content')
-	</main>
-</div>
-
-<footer>
-	
-</footer>
-<script src=" {{ asset('js/map.js') }} "></script>
->>>>>>> added html, css and js for map
 </body>
 </html>
