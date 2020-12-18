@@ -14,10 +14,19 @@ h2 {
 
 .menu {
   color: #F6CD40;
+  text-decoration: none;
+}
+
+.menu:hover {
+  text-decoration: none;
 }
 
 .logo_header {
-  width: 24%;
+  width: 100%;
+}
+
+.userAvatar {
+  max-height: 60px;
 }
 
 .nav_menu {

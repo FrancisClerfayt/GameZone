@@ -3,179 +3,159 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-
+	
 	<title>{{ config('app.name', 'Laravel') }}</title>
-
+	
 	<!-- Scripts -->
 	<script src="{{ asset('js/app.js') }}" defer></script>
-
+	
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-
+	
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/style.css')}}">
 </head>
 <body>
 	<div id="app">
-		<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+		<nav class="navbar navbar-expand-md shadow-sm">
 			<div class="container">
-				<a class="navbar-brand" href="{{ url('/') }}">
-					{{ config('app.name', 'Laravel') }}
-				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<!-- Left Side Of Navbar -->
-					<ul class="navbar-nav mr-auto">
-
-					</ul>
-
-					<!-- Right Side Of Navbar -->
-					<ul class="navbar-nav ml-auto">
+				
+				<div class="collapse navbar-collapse " id="navbarSupportedContent">
+					<ul class="navbar-nav row">
+						<li class="nav-item col">
+							<a class="menu nav-link " href=" {{ route('Attraction.index') }} ">
+								Attractions
+							</a>
+						</li>
+						<li class="nav-item col">
+							<a class="menu nav-link " href=" {{ route('map') }} ">
+								Plan du parc
+							</a>
+						</li>
+						<li class="nav-item col">
+							<a class="menu nav-link " href="">
+								Infos
+							</a>
+						</li>
+						<li class="nav-item col">
+							<a href=" {{ route('home') }} ">
+								<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="logo GameZone le parc d'attraction entièrement dédié aux jeux-vidéo">
+							</a>
+						</li>
+						<li class=" nav-item col">
+							<a class="menu nav-link" href="#">
+								My game
+							</a>
+						</li>
+						<li class="nav-item col">
+							<div class="dropdown">
+								<a class="menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Préparer votre visite
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<a class="dropdown-item btn" href="">Se rendre au parc</a>
+									<a class="dropdown-item btn" href="">Tarifs et billeteries</a>
+									<a class="dropdown-item btn" href="">Horaires et calendrier</a>
+									<a class="dropdown-item btn" href="">Nos restaurants</a>
+								</div>
+							</div>
+						</li>
+						
+						
+						
+						{{-- <a class="menu nav-link nav-item" href="#">Boutique</a> --}}
+						
 						<!-- Authentication Links -->
 						@guest
-						<li class="nav-item">
-							<a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
-						</li>
+						<a class="menu nav-item nav-link" href="{{ route('login') }}">
+							{{ __('Connexion') }}
+						</a>
 						@if (Route::has('register'))
-						<li class="nav-item">
-							<a class="nav-link" href="{{ route('register') }}">{{ __('S\'enregistrer') }}</a>
-						</li>
+						<a class="menu nav-item nav-link" href="{{ route('register') }}">
+							{{ __('S\'enregistrer') }}
+						</a>
 						@endif
 						@else
+						
 						<li class="nav-item dropdown">
+							<img class="userAvatar" src="{{ asset(Auth::user()->avatar) }}" alt="user avatar">
 							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-								<img src=" {{ asset(Auth::user()->avatar) }} " alt="user avatar">
-								{{ Auth::user()->name }}
+								{{ Auth::user()->user_name }}
 							</a>
-
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="{{ route('logout') }}"
-								onclick="event.preventDefault();
-								document.getElementById('logout-form').submit();">
-								{{ __('Logout') }}
-							</a>
-
-							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-								@csrf
-							</form>
-						</div>
-					</li>
-					@endguest
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<nav class="navbar nav nav-fill">
-		<a class="menu nav-link nav-item" href="#">Attractions</a>
-		<a class="menu nav-link nav-item" href="#">Le plan</a>
-		<a class="menu nav-link nav-item" href="#">Infos</a>
-		<a class="menu nav-link nav-item" href="#">My game</a>
-		<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="">
-		<a class="menu nav-link nav-item" href="#">Boutique</a>
-		<div class="dropdown">
-	  <a class="menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	    Se préparer à votre visite
-	  </a>
-	  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-	    <button class="dropdown-item" type="button">Se rendre au parc</button>
-	    <button class="dropdown-item" type="button">Tarifs et billeteries</button>
-	    <button class="dropdown-item" type="button">Horaires et calendrier</button>
-			<button class="dropdown-item" type="button">Nos restaurants</button>
-	  </div>
-	</div>
-		<a class="menu nav-link nav-item" href="#">Mon compte</a>
-	</nav>
-
-	@guest
-	<li class="nav-item">
-		<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-	</li>
-	@if (Route::has('register'))
-	<li class="nav-item">
-		<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-	</li>
-
-	@else
-	<li class="nav-item dropdown">
-		<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-			{{ Auth::user()->name }}
-		</a>
-
-		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="{{ route('logout') }}"
-			onclick="event.preventDefault();
-			document.getElementById('logout-form').submit();">
-			{{ __('Logout') }}
-		</a>
-		@endif
-
-	</div>
-</li>
-@endguest
-</ul>
-</div>
-</nav>
-
-
-<p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
-<div class="jumbotron jumbotron-fluid">
-	<div class="container-fluid">
-		<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
-	</div>
-</div>
-
-
-
-<main class="py-4">
-	@yield('content')
-</main>
-
-
-	<footer class="w-100">
-		<div class="row">
-			<div class="timetable text-center col-sm-12 col-md-12 col-lg-4">
-				<h4 class="text_footer">Horaires du parc :</h4>
-				<p class="text_footer">Du lundi au jeudi : 9h-19h</p>
-				<p class="text_footer">Du vendredi au samedi : 9h-20h</p>
-				<p class="text_footer">Le dimanche : 9h – 18h</p>
-				<p class="text_footer">Fermé tous les premiers mardis du mois</p>
-				<p class="text_footer">Besoin d'aide ? 08 59 62 08 59</p>
-			</div>
-			<div class="text-center col-sm-12 col-md-12 col-lg-4 pt-lg-5 pt-sm-1">
-				<h4 class="text_footer">Suivez-nous !</h4>
-				<div class="logo">
-					<a href="#" target="_blank"><i class="icon fab fa-facebook fa-3x"></i></a>
-					<a href="#" target="_blank"><i class="icon fab fa-instagram fa-3x"></i></a>
-					<a href="#" target="_blank"><i class="icon fab fa-linkedin fa-3x"></i></a>
-					<a href="#" target="_blank"><i class="icon fab fa-youtube fa-3x"></i></a>
+								@if (Auth::user()->isAdmin)
+								<a class="dropdown-item" href="">Test</a>
+								@endif
+								<a class="dropdown-item" href="{{ route('logout') }}"	onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+									{{ __('Logout') }}
+								</a>
+								
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+									@csrf
+								</form>
+							</div>
+						</li>
+						@endguest
+					</ul>
 				</div>
 			</div>
-			<div class="info text-center col-sm-12 col-md-12 col-lg-4">
-				<ul>
-					<li><a class="text_footer" href="#">A propos du parc</a></li>
-					<li><a class="text_footer" href="#">On recrute</a></li>
-					<li><a class="text_footer" href="#">Dans la presse</a></li>
-					<li><a class="text_footer" href="#">Nous contacter</a></li>
-				</ul>
+		</nav>
+		
+		<p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container-fluid">
+				<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
 			</div>
 		</div>
-		<div class="row justify-content-around text-center">
-			<p><a class="text_footer col-lg-4" href="#">Conditions de vente</a></p>
-			<p><a class="text_footer col-lg-4" href="#">© Copyright 2020 GameZone</a></p>
-			<p><a class="text_footer col-lg-4" href="#">Mentions Légales</a></p>
-		</div>
-	</footer>
-</div>
+		
+		<main class="py-4">
+			@yield('content')
+		</main>
+		
+		<footer class="w-100">
+			<div class="row">
+				<div class="timetable text-center col-sm-12 col-md-12 col-lg-4">
+					<h4 class="text_footer">Horaires du parc :</h4>
+					<p class="text_footer">Du lundi au jeudi : 9h-19h</p>
+					<p class="text_footer">Du vendredi au samedi : 9h-20h</p>
+					<p class="text_footer">Le dimanche : 9h – 18h</p>
+					<p class="text_footer">Fermé tous les premiers mardis du mois</p>
+					<p class="text_footer">Besoin d'aide ? 08 59 62 08 59</p>
+				</div>
+				<div class="text-center col-sm-12 col-md-12 col-lg-4 pt-lg-5 pt-sm-1">
+					<h4 class="text_footer">Suivez-nous !</h4>
+					<div class="logo">
+						<a href="#" target="_blank"><i class="icon fab fa-facebook fa-3x"></i></a>
+						<a href="#" target="_blank"><i class="icon fab fa-instagram fa-3x"></i></a>
+						<a href="#" target="_blank"><i class="icon fab fa-linkedin fa-3x"></i></a>
+						<a href="#" target="_blank"><i class="icon fab fa-youtube fa-3x"></i></a>
+					</div>
+				</div>
+				<div class="info text-center col-sm-12 col-md-12 col-lg-4">
+					<ul>
+						<li><a class="text_footer" href="#">A propos du parc</a></li>
+						<li><a class="text_footer" href="#">On recrute</a></li>
+						<li><a class="text_footer" href="#">Dans la presse</a></li>
+						<li><a class="text_footer" href="#">Nous contacter</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row justify-content-around text-center">
+				<p><a class="text_footer col-lg-4" href="#">Conditions de vente</a></p>
+				<p><a class="text_footer col-lg-4" href="#">© Copyright 2020 GameZone</a></p>
+				<p><a class="text_footer col-lg-4" href="#">Mentions Légales</a></p>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

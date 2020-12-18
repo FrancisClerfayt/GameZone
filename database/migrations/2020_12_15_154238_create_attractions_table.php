@@ -19,12 +19,10 @@ class CreateAttractionsTable extends Migration
             $table->integer('xp_gain');
             $table->text('description');
             $table->string('image');
+            $table->string('restriction');
             $table->timestamps();
         });
 
-        Schema::table('attractions', function (Blueprint $table) {
-            $table->foreignId('restriction_id')->references('id')->on('restrictions');
-        });
     }
 
     /**
@@ -34,11 +32,6 @@ class CreateAttractionsTable extends Migration
      */
     public function down()
     {
-
-        Schema::table('attractions', function (Blueprint $table) {
-            $table->dropForeign(['restriction_id']);
-        });
-
         Schema::dropIfExists('attractions');
     }
 }
