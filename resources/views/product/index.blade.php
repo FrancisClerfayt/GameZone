@@ -7,10 +7,10 @@
 <h2 class="first_titre_r">Votre panier</h2>
 
 <div class="frist_ligne_cart">
-<p class="frist_ligne_content"></p>
-<p class="frist_ligne_content"></p>
-<p class="frist_ligne_content"></p>
-<p class="frist_ligne_content"></p>
+<p class="frist_ligne_content">Produit</p>
+<p class="frist_ligne_content">Prix unitaire TTC</p>
+<p class="frist_ligne_content">Quantité</p>
+<p class="frist_ligne_content">Total TTC</p>
 </div>
 
 
@@ -18,13 +18,14 @@
 <div class="container_product">
 @foreach ($products as $product)
 
-<div class="items_product">
-<img src=" {{asset($products->image)}} " class="img_product" >
-<p class="info_product">
-{{$products->name}} <br> {{$products->price}}
-</p>
+<div class="items_cart_product">
+<img src=" {{asset($products->image)}} " class="img_carts" >
+<p class="info_product">{{$products->name}} </p>
+<p class="info_product">{{$products->price}} </p>
+<p class="info_product">{{$Cart_products->quantity}} </p>
+<p class="info_product">{{$Carts->total}} </p>
 
-<button class="achter_button">Ajouter au panier</button>
+
 </div>
 
 @endforeach

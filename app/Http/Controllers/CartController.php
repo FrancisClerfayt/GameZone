@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Cart;
 use App\Cart_products;
+use App\Produts;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
@@ -16,7 +17,7 @@ class CartController extends Controller
     public function index()
     {
         /* $carts = Cart::all(); */
-        $carts = Cart::with('cart_products')->get();
+        $carts = Cart::with('cart_products','products')->get();
         return view('cart.index',['carts' => $carts]);
     }
 
