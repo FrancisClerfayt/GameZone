@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	document.getElementById('servicesFilter').addEventListener( 'click', () => {
 		document.querySelectorAll('#services').forEach( elem => {
-			if ( elem.getElementsByClassName.display === 'none' ) {
+			if (elem.style.display === 'none') {
 				elem.style.display = 'block';
 			} else {
 				elem.style.display = 'none';
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	document.getElementById('restaurantsFilter').addEventListener( 'click', () => {
 		document.querySelectorAll('#restaurants').forEach( elem => {
-			if ( elem.getElementsByClassName.display === 'none' ) {
+			if ( elem.style.display === 'none' ) {
 				elem.style.display = 'block';
 			} else {
 				elem.style.display = 'none';
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	document.getElementById('shopsFilter').addEventListener( 'click', () => {
 		document.querySelectorAll('#shops').forEach( elem => {
-			if ( elem.getElementsByClassName.display === 'none' ) {
+			if ( elem.style.display === 'none' ) {
 				elem.style.display = 'block';
 			} else {
 				elem.style.display = 'none';
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	document.getElementById('photoSpotFilter').addEventListener( 'click', () => {
-		document.querySelectorAll('#shops').forEach( elem => {
-			if ( elem.getElementsByClassName.display === 'none' ) {
+		document.querySelectorAll('#photoSpots').forEach( elem => {
+			if ( elem.style.display === 'none' ) {
 				elem.style.display = 'block';
 			} else {
 				elem.style.display = 'none';
@@ -40,41 +40,59 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 
-	let more1m30 = [
-		'awesomeHeroes',
-		'contagionVR',
-		'fighterHardTeam'
+	let noRestriction = [
+		'.battleKart',
+		'.championsLeague',
+		'.gameCenter',
+		'.heroesTeam'
 	];
 
 	let more1m10 = [
-		'championsLeagueSurvivor',
-		'superFighterLeague'
+		'.battleKart',
+		'.championsLeague',
+		'.gameCenter',
+		'.heroesTeam',
+		'.championsLeagueSurvivor',
+		'.superFighterLeague'
 	];
-
-	let noRestriction = [
-		'battleKart',
-		'championsLeague',
-		'gameCenter',
-		'heroesTeam'
+	
+	let more1m30 = [
+		'.fighterHardTeam',
+		'.battleKart',
+		'.gameCenter',
+		'.heroesTeam',
+		'.contagionVR',
+		'.superFighterLeague',
+		'.awesomeHeroes',
+		'.championsLeague',
+		'.championsLeagueSurvivor'
 	];
 
 	let restrictionFilter = document.getElementById('restrictionFilter');
 
-	restrictionFilter.addEventListener('select', () => {
-		if (restrictionFilter.value === 'all') {
-			noRestriction.forEach( elem => {
-				let element = document.querySelector( '.' + elem );
-				element.style.display = 'block';
+	restrictionFilter.addEventListener('change', () => {
+		// We hide all attractions
+		more1m30.forEach((elem) => {
+			document.querySelector(elem).style.display = 'none';
+		});
+
+		if (restrictionFilter.value === 'noRestriction') {
+			// Attractions with no restriction selected
+			console.log('noRestriction');
+			noRestriction.forEach( (elem) => {
+				document.querySelector(elem).style.display = 'block';
 			});
-		} else if (restrictionFilter.value === '1m10') {
-			noRestriction.concat(more1m10).forEach( elem => {
-				let element = document.querySelector( '.' + elem );
-				element.style.display = 'block';
+		} else if (restrictionFilter.value === 'more1m10') {
+			console.log('more1m10');
+			// Attraction with a 1m10 limit selected
+			more1m10.forEach( (elem) => {
+				document.querySelector(elem).style.display = 'block';
 			});
 		} else {
-			noRestriction.concat([ more1m10, more1m30 ]).forEach( elem => {
-				let element = document.querySelector( '.' + elem );
-				element.style.display = 'block';
+			console.log('all');
+			// All attractions is selected
+			more1m30.forEach( (elem) => {
+				document.querySelector(elem).style.display = 'block';
 			});
 		}
 	});

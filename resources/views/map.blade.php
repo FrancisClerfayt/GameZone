@@ -2,45 +2,44 @@
 
 @section('content')
 <section class="mapContainer">
-	
+	<h2>Plan du parc</h2>
 	<div class="legend">
-		<h2>Services</h2>
-		
 		<div class="filters">
 			<div class="form-group">
-				<input type="checkbox" name="servicesFilter" id="servicesFilter">
+				<input type="checkbox" name="servicesFilter" id="servicesFilter" checked>
 				<label for="servicesFilter">
-					<img src=" {{ asset('images/icon_services.png') }} " alt="a pink pin that point a service on the map">
+					<img class="legendPin" src=" {{ asset('images/icon_services.png') }} " alt="a pink pin that point a service on the map">
 					Services
 				</label>
 			</div>
 			<div class="form-group">
-				<input type="checkbox" name="restaurantsFilter" id="restaurantsFilter">
+				<input type="checkbox" name="restaurantsFilter" id="restaurantsFilter" checked>
 				<label for="restaurantsFilter">
-					<img src=" {{ asset('images/icon_restaurant.png') }} " alt="a dark blue pin that point a restaurant on the map">
+					<img class="legendPin" src=" {{ asset('images/icon_restaurant.png') }} " alt="a dark blue pin that point a restaurant on the map">
 					Restaurants
 				</label>
 			</div>
 			<div class="form-group">
-				<input type="checkbox" name="shopsFilter" id="shopsFilter">
+				<input type="checkbox" name="shopsFilter" id="shopsFilter" checked>
 				<label for="shopsFilter">
-					<img src=" {{ asset('images/icon_shops.png') }} " alt="a blue pin that point a shop on the map">
+					<img class="legendPin" src=" {{ asset('images/icon_shops.png') }} " alt="a blue pin that point a shop on the map">
 					Boutiques
 				</label>
 			</div>
 			<div class="form-group">
-				<input type="checkbox" name="photoSpotFilter" id="photoSpotFilter">
+				<input type="checkbox" name="photoSpotFilter" id="photoSpotFilter" checked>
 				<label for="photoSpotFilter">
-					<img src=" {{ asset('images/icon_photo_spots.png') }} " alt="a yellow pin that point a restaurant on the map">
+					<img class="legendPin" src=" {{ asset('images/icon_photo_spots.png') }} " alt="a yellow pin that point a restaurant on the map">
 					Points photo
 				</label>
 			</div>
 			<div class="form-group">
 				<label for="restrictionFilter">Filtrer selon restriction</label>
 				<select name="restrictionFilter" id="restrictionFilter">
-					<option value="all">Accessible à tous</option>
-					<option value="1m10">supérieur à 1m10</option>
-					<option value="1m30">supérieur à 1m30</option>
+					<option value="all" selected>Toutes les attractions</option>
+					<option value="noRestriction">Accessible à tous</option>
+					<option value="more1m10">Taille minimum 1m10</option>
+					<option value="more1m30">Taille minimum 1m30</option>
 				</select>
 			</div>
 		</div>
@@ -73,15 +72,15 @@
 		<img src="{{ asset('images/icon_services.png') }}" class="service4" id="services">
 		<img src="{{ asset('images/icon_services.png') }}" class="service5" id="services">
 		
-		<img src="{{ asset('images/logo_awesome_heroes_team.png') }}" class="awesomeHeroes">
-		<img src="{{ asset('images/logo_battle_kart.png') }}" class="battleKart">
-		<img src="{{ asset('images/logo_champions_league.png') }}" class="championsLeague">
-		<img src="{{ asset('images/logo_champions_league_survivor.png') }}" class="championsLeagueSurvivor">
-		<img src="{{ asset('images/logo_contagion_vr.png') }}" class="contagionVR">
-		<img src="{{ asset('images/logo_fighter_hard_team.png') }}" class="fighterHardTeam">
-		<img src="{{ asset('images/logo_game_center.png') }}" class="gameCenter">
-		<img src="{{ asset('images/logo_heroes_team.png') }}" class="heroesTeam">
-		<img src="{{ asset('images/logo_super_fighter_league.png') }}" class="superFighterLeague">
+		<img class="championsLeagueSurvivor" src="{{asset('images/logo_champions_league_survivor.png')}}">
+		<img class="superFighterLeague" src="{{asset('images/logo_super_fighter_league.png')}}">
+		<img class="fighterHardTeam" src="{{asset('images/logo_fighter_hard_team.png')}}">
+		<img class="awesomeHeroes" src="{{asset('images/logo_awesome_heroes_team.png')}}">
+		<img class="championsLeague" src="{{asset('images/logo_champions_league.png')}}">
+		<img class="contagionVR" src="{{asset('images/logo_contagion_vr.png')}}">
+		<img class="battleKart" src="{{asset('images/logo_battle_kart.png')}}">
+		<img class="gameCenter" src="{{asset('images/logo_game_center.png')}}">
+		<img class="heroesTeam" src="{{asset('images/logo_heroes_team.png')}}">
 	</div>
 	
 </section>
