@@ -15,8 +15,8 @@
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
 	
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -53,7 +53,7 @@
 							</a>
 						</li>
 						<li class=" nav-item col">
-							<a class="menu nav-link" href="#">
+							<a class="menu nav-link" href=" {{ route('miniGame') }} ">
 								My game
 							</a>
 						</li>
@@ -157,6 +157,5 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/map.js"></script>
 </body>
 </html>

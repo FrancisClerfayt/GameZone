@@ -337,3 +337,29 @@ footer {
   top: 4%; 
   left: 67%;
 }
+
+/* MiniGame CSS */
+.gameGrid {
+	display: grid;
+  grid-template-columns: 320px 200px;
+  margin: 0 25% 0 25%;
+}
+
+.stats {
+	display: flex;
+  flex-direction: column;
+  font-family: 'Press Start 2P' !important;
+	justify-content: space-between;
+}
+
+.gameBoard {
+	border: 2px solid black;
+}
+
+.playButton {
+	background-color: #1C1F3D;
+	cursor: pointer;
+	font-family: 'Press Start 2P' !important;
+	font-size: 24px;
+	padding: 2% 5%;
+}

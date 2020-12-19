@@ -29,4 +29,8 @@ class HomeController extends Controller
     public function map(){
         return view('map');
     }
+
+    public function game(){
+        return view('game');
+    }
 }

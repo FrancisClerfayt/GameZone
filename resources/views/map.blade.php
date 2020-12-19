@@ -84,4 +84,6 @@
 	</div>
 	
 </section>
+<script src="js/map.js"></script>
+
 @endsection
