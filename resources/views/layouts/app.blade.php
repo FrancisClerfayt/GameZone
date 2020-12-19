@@ -96,6 +96,9 @@
 								@if (Auth::user()->isAdmin)
 								<a class="dropdown-item" href="">Test</a>
 								@endif
+								<a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="dropdown-item">
+									Mon Compte
+								</a>
 								<a class="dropdown-item" href="{{ route('logout') }}"	onclick="event.preventDefault();document.getElementById('logout-form').submit();">
 									{{ __('Logout') }}
 								</a>
