@@ -104,3 +104,39 @@ h2 {
   padding-top: 40px;
   line-height: 30px;
 }
+
+/* page carts start here */
+
+.first_titre_r {
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+.frist_ligne_cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-wrap: nowrap;
+}
+.frist_ligne_content {
+  margin-left: 2em;
+}
+.items_cart_product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.total_cart {
+  text-align: right;
+}
+.button_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex_cart_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
