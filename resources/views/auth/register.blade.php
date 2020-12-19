@@ -90,25 +90,25 @@
 						
 						<div class="form-group row">
 							<div class="col-lg-3 col-md-">
-								<input type="radio" name="avatar" id="avatar1" value="images/eagle.png" checked>
+								<input type="radio" name="avatar" id="avatar1" value="images/avatar_eagle.png" checked>
 								<label for="avatar1" id="avatar1">
 									<img class="w-100" src=" {{ asset('images/avatar_eagle.png') }} " alt="an avatar with an eagle head">
 								</label>
 							</div>
 							<div class="col">
-								<input type="radio" name="avatar" id="avatar2" value="images/pirate.png">
+								<input type="radio" name="avatar" id="avatar2" value="images/avatar_pirate.png">
 								<label for="avatar2" id="avatar2">
 									<img class="w-100" src=" {{ asset('images/avatar_pirate.png') }} " alt="an avatar with an pirate head">
 								</label>
 							</div>
 							<div class="col">
-								<input type="radio" name="avatar" id="avatar3" value="images/wolf.png">
+								<input type="radio" name="avatar" id="avatar3" value="images/avatar_wolf.png">
 								<label for="avatar3" id="avatar3">
 									<img class="w-100" src=" {{ asset('images/avatar_wolf.png') }} " alt="an avatar with a wolf head">
 								</label>
 							</div>
 							<div class="col">
-								<input type="radio" name="avatar" id="avatar4" value="images/snake.png">
+								<input type="radio" name="avatar" id="avatar4" value="images/avatar_snake.png">
 								<label for="avatar4" id="avatar4">
 									<img class="w-100" src=" {{ asset('images/avatar_snake.png') }} " alt="an avatar with a snake head">
 								</label>

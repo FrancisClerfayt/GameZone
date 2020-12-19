@@ -74,7 +74,7 @@ class UserController extends Controller
         $user = User::find($id);
         $user->fill($request->all());
         $user->save();
-        return redirect()->route('user.show', ['user' => $id]);
+        return redirect()->route('User.show', ['User' => $id]);
     }
 
     /**
@@ -85,6 +85,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+        return redirect()->route('home');
     }
 }
