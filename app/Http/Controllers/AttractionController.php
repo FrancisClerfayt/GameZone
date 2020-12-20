@@ -14,7 +14,8 @@ class AttractionController extends Controller
      */
     public function index()
     {
-        //
+        $attractions = Attraction::all();
+        return view ('attraction.index',['attractions'=>$attractions]);
     }
 
     /**

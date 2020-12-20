@@ -2,10 +2,11 @@
 
 @section('content')
 <section>
+	<img src="{{ asset('images/gamezone.jpg')}}" alt="game zone" style="width: 100%;">
 	<div>
-		<h1>Conditions Générales de Vente</h1>
+		<h1 class="mt-5 mb-5">CONDITIONS GENERALES DE VENTE</h1>
 	</div>
-	<div>
+	<div class="pl-5 pr-5">
 		<p>
 			Entre la Société Geek Cybercenter,<br>
 			*******ADRESSE SOCIETE***********,<br>

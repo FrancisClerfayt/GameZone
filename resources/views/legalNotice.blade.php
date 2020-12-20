@@ -2,10 +2,11 @@
 
 @section('content')
 <section>
+	<img src="{{ asset('images/gamezone.jpg')}}" alt="game zone" style="width: 100%;">
 	<div>
-		<h1>Mentions Légales</h1>
+		<h1 class="mt-5 mb-5">MENTIONS LEGALES</h1>
 	</div>
-	<div>
+	<div class="pl-5 pr-5">
 		<p>Définitions<br>
 		Client : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.<br>
 		Prestations et Services : https://**********URL********** met à disposition des Clients :
