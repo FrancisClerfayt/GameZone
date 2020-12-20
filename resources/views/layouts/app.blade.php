@@ -31,7 +31,7 @@
 				</button>
 				
 				<div class="collapse navbar-collapse " id="navbarSupportedContent">
-					<ul class="navbar-nav row">
+					<ul class="navbar-nav row justify-content-center align-items-center">
 						<li class="nav-item col">
 							<a class="menu nav-link " href=" {{ route('Attraction.index') }} ">
 								Attractions
@@ -70,11 +70,9 @@
 								</div>
 							</div>
 						</li>
-						
-						
-						
-						{{-- <a class="menu nav-link nav-item" href="#">Boutique</a> --}}
-						
+						<li class="nav-item col">
+							{{-- <a class="menu nav-link nav-item" href="#">Boutique</a> --}}
+						</li>
 						<!-- Authentication Links -->
 						@guest
 						<a class="menu nav-item nav-link" href="{{ route('login') }}">
@@ -94,7 +92,7 @@
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								@if (Auth::user()->isAdmin)
-								<a class="dropdown-item" href="">Test</a>
+								<a class="dropdown-item" href="">Page d'admministration</a>
 								@endif
 								<a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="dropdown-item">
 									Mon Compte
