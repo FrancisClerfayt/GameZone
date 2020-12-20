@@ -29,4 +29,7 @@ class HomeController extends Controller
     public function map(){
         return view('map');
     }
+    public function geolocalisation(){
+      return view('geolocalisation');
+    }
 }

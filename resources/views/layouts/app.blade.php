@@ -3,22 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-	
+
 	<title>{{ config('app.name', 'Laravel') }}</title>
-	
+
 	<!-- Scripts -->
 	<script src="{{ asset('js/app.js') }}" defer></script>
-	
+
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-	
+
 	<!-- Styles -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+  
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/style.css')}}">
 </head>
@@ -29,7 +32,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				
+
 				<div class="collapse navbar-collapse " id="navbarSupportedContent">
 					<ul class="navbar-nav row">
 						<li class="nav-item col">
@@ -38,7 +41,7 @@
 							</a>
 						</li>
 						<li class="nav-item col">
-							<a class="menu nav-link " href=" {{ route('map') }} ">
+							<a class="menu nav-link " href="">
 								Plan du parc
 							</a>
 						</li>
@@ -70,11 +73,11 @@
 								</div>
 							</div>
 						</li>
-						
-						
-						
+
+
+
 						{{-- <a class="menu nav-link nav-item" href="#">Boutique</a> --}}
-						
+
 						<!-- Authentication Links -->
 						@guest
 						<a class="menu nav-item nav-link" href="{{ route('login') }}">
@@ -86,7 +89,7 @@
 						</a>
 						@endif
 						@else
-						
+
 						<li class="nav-item dropdown">
 							<img class="userAvatar" src="{{ asset(Auth::user()->avatar) }}" alt="user avatar">
 							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -99,7 +102,7 @@
 								<a class="dropdown-item" href="{{ route('logout') }}"	onclick="event.preventDefault();document.getElementById('logout-form').submit();">
 									{{ __('Logout') }}
 								</a>
-								
+
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
 									@csrf
 								</form>
@@ -110,18 +113,18 @@
 				</div>
 			</div>
 		</nav>
-		
+
 		<p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
 		<div class="jumbotron jumbotron-fluid">
 			<div class="container-fluid">
 				<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
 			</div>
 		</div>
-		
+
 		<main class="py-4">
 			@yield('content')
 		</main>
-		
+
 		<footer class="w-100">
 			<div class="row">
 				<div class="timetable text-center col-sm-12 col-md-12 col-lg-4">

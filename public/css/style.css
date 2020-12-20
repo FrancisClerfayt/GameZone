@@ -113,3 +113,8 @@ h2 {
   padding-top: 40px;
   line-height: 30px;
 }
+/*se rendre au oarc*/
+#carte{
+    height: 50vh;
+    width: 100%;
+}
