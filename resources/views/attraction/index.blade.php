@@ -5,8 +5,8 @@
 <h1 class="text-center title_index">Nos attractions</h1>
   <div class="row justify-content-around">
 
-    <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/vr_entrance.png')}}" class="card-img" alt="virtual reality entrance">
+    <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4" >
+      <img src="{{ asset('images/vr_entrance.jpg')}}" class="card-img" alt="virtual reality entrance" style="height: 450px">
       <div class="card-img-overlay">
         <img src="{{ asset('images/logo_vr.png')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 50%;">
         <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
@@ -19,8 +19,9 @@
     </div>
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/battle_kart.png')}}" class="card-img-top" alt="karts">
+      <img src="{{ asset('images/battle_kart.jpg')}}" class="card-img-top" alt="karts" style="height: 450px">
       <div class="card-img-overlay">
+        <img src="{{ asset('images/logo_battle_kart.png')}}" class="card-img-top" alt="logo super fighter league" style="width: 40%">
         <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
         <p class="p-2 bd-highlight">Accessible à tous</p>
         <h3>XP 1000 par partie</h3>
@@ -31,7 +32,7 @@
 
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/football_pitch.jpg')}}" class="card-img-top" alt="football pitch">
+      <img src="{{ asset('images/football_pitch.jpg')}}" class="card-img-top" alt="football pitch" style="height: 450px">
       <div class="card-img-overlay">
         <img src="{{ asset('images/logo_champions_league.png')}}" class="card-img-top" alt="logo champions league" style="width: 40%">
         <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
@@ -44,7 +45,7 @@
 
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/champions_league_survivor_football_pitch.png')}}" class="card-img-top" alt="football pitch">
+      <img src="{{ asset('images/champions_league_survivor_football_pitch.jpg')}}" class="card-img-top" alt="football pitch" style="height: 450px">
       <div class="card-img-overlay">
       <img src="{{ asset('images/logo_champions_league_survivor.png')}}" class="card-img-top" alt="logo champions league survivor" style="width: 40%">
       <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
@@ -58,7 +59,7 @@
     </div>
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/arcade_joystick.jpg')}}" class="card-img-top" alt="arcade joystick">
+      <img src="{{ asset('images/arcade_joystick.jpg')}}" class="card-img-top" alt="arcade joystick" style="height: 450px">
       <div class="card-img-overlay">
       <img src="{{ asset('images/logo_game_center.png')}}" class="card-img-top" alt="logo game center" style="width: 40%">
       <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
@@ -69,7 +70,7 @@
     </div>
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/boxer.jpg')}}" class="card-img-top" alt="boxer">
+      <img src="{{ asset('images/boxer.jpg')}}" class="card-img-top" alt="boxer" style="height: 450px">
       <div class="card-img-overlay">
         <img src="{{ asset('images/logo_fighter_hard_team.png')}}" class="card-img-top" alt="logo fighter hard team" style="width: 40%">
         <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
@@ -82,7 +83,7 @@
     </div>
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/super_fighter_league_night_fairground.png')}}" class="card-img-top" alt="fairground at night">
+      <img src="{{ asset('images/super_fighter_league_night_fairground.png')}}" class="card-img-top" alt="fairground at night" style="height: 450px">
       <div class="card-img-overlay">
         <img src="{{ asset('images/logo_super_fighter_league.png')}}" class="card-img-top" alt="logo super fighter league" style="width: 40%">
         <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
@@ -93,7 +94,7 @@
     </div>
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/heroes_team_iron_man.jpg')}}" class="card-img-top" alt="iron man">
+      <img src="{{ asset('images/heroes_team_iron_man.jpg')}}" class="card-img-top" alt="iron man" style="height: 450px">
       <div class="card-img-overlay">
         <img src="{{ asset('images/logo_heroes_team.png')}}" class="card-img-top" alt="logo heroes team" style="width: 40%">
         <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 5%;">
@@ -104,7 +105,7 @@
     </div>
 
     <div class="card bg-dark text-white col-lg-5 col-md-10 mx-2 mb-4">
-      <img src="{{ asset('images/knight.jpg')}}" class="card-img-top" alt="knight">
+      <img src="{{ asset('images/knight.jpg')}}" class="card-img-top" alt="knight" style="height: 450px">
       <div class="card-img-overlay">
         <img src="{{ asset('images/logo_awesome_heroes_team.png')}}" class="card-img-top" alt="logo awesome heroes team" style="width: 40%">
         <img src="{{ asset('images/icon_male.svg')}}" class="card-img-top p-2 bd-highlight" alt="logo contagion virtual reality" style="width: 2%;">
