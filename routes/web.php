@@ -23,6 +23,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('loggedHome');
 Route::get('/map', 'HomeController@map')->name('map');
 Route::get('/game', 'HomeController@game')->name('miniGame');
+Route::get('/calendar', 'HomeController@calendar')->name('calendar');
 Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
 Route::get('/terms_of_sales','TermsOfSales@index')->name('terms_of_sales');
 

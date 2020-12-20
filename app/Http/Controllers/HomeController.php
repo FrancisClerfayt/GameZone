@@ -33,4 +33,9 @@ class HomeController extends Controller
     public function game(){
         return view('game');
     }
+
+    public function calendar()
+    {
+        return view('calendar');
+    } 
 }
