@@ -410,12 +410,12 @@ footer {
 }
 
  .female {
-   color: #ffffff; 
+   color: #ffffff;
  }
 
 .grid-container {
   display: grid;
-  
+
   grid-template-columns: calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7)
   ;
   padding: 10px;
@@ -593,7 +593,7 @@ footer {
 .img_i_left {
     width: 47%;
     min-width: 15em;
-   
+
 }
 .restaurant_right_i {
     margin:3em auto auto 4em ;
@@ -623,43 +623,7 @@ footer {
 .tarif_age {
   margin-left: 7%;
 }
-/* .contenaire_tarifs {
-  padding: 2em;
-  display: flex;
-  flex-direction: row;
 
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-
-.img_tarifs {
-  width: 70%;
-  min-width: 15em;  
-}
-.tarifs_items {
-  text-align: center;
-  
-}
-.text_intems {
-  position: absolute;
-  background-color: #662a60a1;
-  color: snow;
-  padding: .8em 2em;
-  width: 22.5%;
-  top: 18em;
-}
-
-.text_intems3 {
-  left: 70.5%;
-}
-.text_intems2 {
-  left: 38.6%;
-}
-.text_intems1 {
-  left:7%;
-} */
 .contenaire_tarifs {
   padding: 2em;
   display: flex;
@@ -667,14 +631,14 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 
 .img_tarifs {
   width: 28%;
-  min-width: 15em; 
-  margin: 1.5em; 
+  min-width: 15em;
+  margin: 1.5em;
 }
 
 .tarifs_text_tiket {
@@ -688,6 +652,22 @@ footer {
 .gril_footer {
   margin: 12em auto 0 5em;
   }
+
+.tickets_price {
+  background-color: #1C1F3D;
+}
+
+.tickets {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.total_price {
+  background-color: #F6CD40;
+  color: #1C1F3D;
+  width: 40%;
+  margin: 0 30%;
+}
 /* page recrute start  */
 .titre_recrute {
     text-align: center;
