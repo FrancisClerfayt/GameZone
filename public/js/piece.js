@@ -12,7 +12,7 @@ class Piece {
 	}
 	
 	spawn() {
-		this.typeId = this.randomPiece(COLORS.length);
+		this.typeId = this.randomPiece();
 		this.shape = SHAPES[this.typeId];
 		this.color = COLORS[this.typeId];
 		this.x = 0;
@@ -48,11 +48,7 @@ class Piece {
 		}
 	}
 	
-	randomPiece(nbType) {
-		let randomNumber;
-		do {
-			randomNumber = Math.floor( Math.random() * nbType );
-		} while (randomNumber > 7 && randomNumber < 1);
-		return randomNumber;
+	randomPiece() {
+		return Math.floor( Math.random() * 7 );
 	}
 }

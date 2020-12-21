@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid p-5">
 	<div class="gameGrid">
 		<canvas class="gameBoard" id="board"></canvas>
 		<div class="stats">

@@ -25,7 +25,7 @@ class AttractionController extends Controller
      */
     public function create()
     {
-        //
+        return view('attraction.create');
     }
 
     /**
@@ -36,7 +36,35 @@ class AttractionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+			'name' => 'required',
+            'xp_gain' => 'required',
+            'description' => 'required',
+            'background_image' => 'required',
+            'background_image_alt' => 'required',
+            'logo' => 'required',
+            'logo_alt' => 'required',
+            'restriction' => 'required'
+        ]);
+
+        $logo = $request->file('logo')->store('public/attractions');
+        $background_image = $request->file('background_image')->store('public/attractions');
+        $logo = substr($logo, 7);
+        $background_image = substr($background_image, 7);
+        
+        $attraction = new Attraction([
+            'name' => $request->get('name'),
+            'xp_gain' => $request->get('xp_gain'),
+            'description' => $request->get('description'),
+            'background_image' => $background_image,
+            'background_image_alt' => $request->get('background_image_alt'),
+            'logo' => $logo,
+            'logo_alt' => $request->get('logo_alt'),
+            'restriction' => $request->get('restriction')
+        ]);
+        $attraction->save();
+
+        return redirect()->route('admin')->with('message', 'L\'attraction à bien été ajouté');
     }
 
     /**
@@ -56,9 +84,10 @@ class AttractionController extends Controller
      * @param  \App\Attraction  $attraction
      * @return \Illuminate\Http\Response
      */
-    public function edit(Attraction $attraction)
+    public function edit($id)
     {
-        //
+        $attraction = Attraction::find($id);
+        return view('attraction.edit', ['Attraction' => $attraction]);
     }
 
     /**
@@ -68,9 +97,34 @@ class AttractionController extends Controller
      * @param  \App\Attraction  $attraction
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Attraction $attraction)
+    public function update(Request $request, $id)
     {
-        //
+        $attraction = Attraction::find($id);
+        
+        $attraction->fill([
+            'name',
+            'xp_gain',
+            'description',
+            'background_image_alt',
+            'logo_alt',
+            'restriction'
+        ]);
+
+        if($request->hasFile('logo')){
+            $logo = $request->file('logo')->store('public/attractions');
+            $logo = substr($logo, 7);
+            $attraction->fill(['logo' => $logo]);
+        }
+
+        if($request->hasFile('background_image')){
+            $background_image = $request->file('background_image')->store('public/attractions');
+            $background_image = substr($background_image, 7);
+            $attraction->fill(['background_image'=>$background_image]);
+        }
+        
+        $attraction->save();
+
+        return redirect()->route('Attraction.index')->with('message', 'L\'attraction à bien été modifié');
     }
 
     /**
@@ -79,8 +133,11 @@ class AttractionController extends Controller
      * @param  \App\Attraction  $attraction
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Attraction $attraction)
+    public function destroy($id)
     {
-        //
+        $attraction = Attraction::find($id);
+        $attraction->delete();
+
+        return redirect()->route('Attraction.index')->with('message', 'L\'attraction a bien été supprimée !');
     }
 }
