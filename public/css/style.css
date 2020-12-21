@@ -523,7 +523,7 @@ footer {
 
 .first_titre_r {
   text-align: center;
-  font-size: 1.5em;
+ /*  font-size: 1.5em; */
   margin: auto 2%;
 }
 .tarifs_text {
