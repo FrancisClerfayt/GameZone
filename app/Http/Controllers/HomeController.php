@@ -33,4 +33,8 @@ class HomeController extends Controller
     public function game(){
         return view('game');
     }
+
+    public function admin(){
+        return view('admin');
+    }
 }

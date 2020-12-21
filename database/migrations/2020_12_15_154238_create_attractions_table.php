@@ -18,7 +18,10 @@ class CreateAttractionsTable extends Migration
             $table->string('name');
             $table->integer('xp_gain');
             $table->text('description');
-            $table->string('image');
+            $table->string('background_image');
+            $table->string('background_image_alt');
+            $table->string('logo');
+            $table->string('logo_alt');
             $table->string('restriction');
             $table->timestamps();
         });
