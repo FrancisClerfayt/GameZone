@@ -42,12 +42,12 @@
 							</a>
 						</li>
 						<li class="nav-item col">
-							<a class="menu nav-link " href="">
+							<a class="menu nav-link " href="{{ route('map') }}">
 								Plan du parc
 							</a>
 						</li>
 						<li class="nav-item col">
-							<a class="menu nav-link " href="">
+							<a class="menu nav-link " href="{{ route('info') }}">
 								Infos
 							</a>
 						</li>
@@ -67,10 +67,10 @@
 									Préparer votre visite
 								</a>
 								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-									<a class="dropdown-item btn" href="">Se rendre au parc</a>
-									<a class="dropdown-item btn" href="">Tarifs et billeteries</a>
-									<a class="dropdown-item btn" href="">Horaires et calendrier</a>
-									<a class="dropdown-item btn" href="">Nos restaurants</a>
+									<a class="dropdown-item btn" href="{{ route('geolocalisation') }}">Se rendre au parc</a>
+									<a class="dropdown-item btn" href="{{ route('Tarifs.index') }}">Tarifs et billeteries</a>
+									<a class="dropdown-item btn" href="{{ route('calendar') }}">Horaires et calendrier</a>
+									<a class="dropdown-item btn" href="{{ route('Restaurant.index') }}">Nos restaurants</a>
 								</div>
 							</div>
 						</li>
@@ -116,16 +116,7 @@
 			</div>
 		</nav>
 
-<<<<<<< HEAD
 
-=======
-		<p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
-		<div class="jumbotron jumbotron-fluid">
-			<div class="container-fluid">
-				<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
-			</div>
-		</div>
->>>>>>> develop
 
 		<main class="py-4">
 			@yield('content')

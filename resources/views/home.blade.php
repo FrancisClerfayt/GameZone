@@ -2,11 +2,7 @@
 
 @section('content')
 <div class="container-fluid">
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container-fluid">
-      <img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
-    </div>
-  </div>
+      <img src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
 </div>
 <div class="container">
   <div class="row justify-content-around">
