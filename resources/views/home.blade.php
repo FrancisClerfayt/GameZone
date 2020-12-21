@@ -80,7 +80,7 @@
 
   </div>
   <h2 class="text-center title_index">Nos actualités !</h2>
-  <p class="text-center actuality">En raison des conditions sanitaires que vous connaissez, le parc est actuellement fermé jusqu'à nouvel ordre</p>
+  <p class="text-center news">En raison des conditions sanitaires que vous connaissez, le parc est actuellement fermé jusqu'à nouvel ordre</p>
 
 
 
