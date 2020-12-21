@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
   <div class="jumbotron jumbotron-fluid">
     <div class="container-fluid">
       <img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
     </div>
   </div>
+</div>
+<div class="container">
   <div class="row justify-content-around">
     <img class="logo_gamezone col-lg-6" src="{{ asset('images/logo_gamezone.png')}}" alt="logo gamezone geek cybercenter">
     <p class="presentation col-lg-6">
@@ -20,19 +22,19 @@
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/fairground_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez nos offres</p>
+        <p class="text-center offer"><a href="{{ route('Tarifs.index') }}">Découvrez nos offres</a></p>
       </div>
     </div>
     <div class="card  offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/arcade_girls_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez nos attractions</p>
+        <p class="text-center offer"><a href="{{ route('Attraction.index') }}">Découvrez nos attractions</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/open_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez nos horaires</p>
+        <p class="text-center offer"><a href="{{ route('Tarifs.index') }}">Découvrez nos horaires</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
