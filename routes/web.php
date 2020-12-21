@@ -39,3 +39,6 @@ Route::resource('Cart', 'CartController');
 Route::get('/terms_of_sales','TermsOfSales@index')->name('terms_of_sales');
 
 Route::resource('Tarifs', 'TarifsController');
+Route::resource('Avatar', 'AvatarController');
+
+Route::resource('Recrute', 'RecruteController');
