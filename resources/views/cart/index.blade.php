@@ -16,7 +16,7 @@
 
 
 <div class="container_product">
-@foreach ($carts as $cart)
+@foreach ($cart as $product)
 
 <div class="items_cart_product">
 <img src=" {{asset($products->image)}} " class="img_carts" >
@@ -27,7 +27,7 @@
 </div>
 
 @endforeach
-<P class="total_cart">Total articles: {{$carts->total}} €</P>
+<P class="total_cart">Total articles: {{$cart->total}} €</P>
 
 </div>
 
