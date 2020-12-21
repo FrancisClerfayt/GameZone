@@ -16,9 +16,13 @@
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
 
 	<!-- Styles -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/style.css')}}">
 </head>
@@ -38,7 +42,7 @@
 							</a>
 						</li>
 						<li class="nav-item col">
-							<a class="menu nav-link " href=" {{ route('map') }} ">
+							<a class="menu nav-link " href="">
 								Plan du parc
 							</a>
 						</li>
@@ -112,7 +116,16 @@
 			</div>
 		</nav>
 
+<<<<<<< HEAD
 
+=======
+		<p class="title_header">Le premier parc d’attraction dédié aux jeux-video</p>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container-fluid">
+				<img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
+			</div>
+		</div>
+>>>>>>> develop
 
 		<main class="py-4">
 			@yield('content')

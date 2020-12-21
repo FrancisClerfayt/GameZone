@@ -1,11 +1,57 @@
+/* page recrute start  */
+.titre_recrute {
+    text-align: center;
+    margin: 2em auto;
+    /* font-size: 1.5em; */
+}
+
+.text_recrute {
+    margin: 0 8%;
+    padding: 2em 2em 6em;
+    background-color: #FFF3F3;
+}
+.contact_recrute {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: initial;
+    background-color: #FFF3F3;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 2em;
+}
+
+.icon_recrute {
+    width: 2.5em;
+    margin-right: 1.5em;
+}
+.gril_footer {
+    margin: 12em auto 0 5em;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
+h1 {
+  font-family: 'Commando';
+  text-align: center;
+  font-size: 42px;
+}
+
 h2 {
   font-size: 36px;
 }
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
 /*header*/
 
 .navbar {
@@ -51,6 +97,8 @@ h2 {
 }
 
 
+
+
 /*INDEX*/
 
 .presentation {
@@ -84,7 +132,7 @@ h2 {
   margin: 30px 0 30px 0;
 }
 
-.actuality {
+.news {
   font-size: 18px;
 }
 
@@ -116,9 +164,6 @@ footer {
 .info {
   padding-top: 40px;
   line-height: 30px;
-}
-.actuality {
-  font-size: 18px;
 }
 
 /* MAP CSS */
@@ -216,7 +261,7 @@ footer {
 
 /* restaurants */
 .restaurant1 {
-  top: 42%; 
+  top: 42%;
   left: 29%;
 }
 
@@ -242,7 +287,7 @@ footer {
 
 /* Shops */
 .shop1 {
-  top: 55%; 
+  top: 55%;
   left: 34%;
 }
 
@@ -268,7 +313,7 @@ footer {
 
 /* services */
 .service1 {
-  top: 44%; 
+  top: 44%;
   left: 49%;
 }
 
@@ -294,47 +339,47 @@ footer {
 
 /* Attractions */
 .awesomeHeroes {
-  top: 23%; 
+  top: 23%;
   left: 29%;
 }
 
 .battleKart {
-  top: 59%; 
+  top: 59%;
   left: 57%;
 }
 
 .championsLeague {
-  top: 43%; 
+  top: 43%;
   left: 83%;
 }
 
 .championsLeagueSurvivor {
-  top: 8%; 
+  top: 8%;
   left: 38%;
 }
 
 .contagionVR {
-  top: 4%; 
+  top: 4%;
   left: 80%;
 }
 
 .fighterHardTeam {
-  top: 51%; 
+  top: 51%;
   left: 19%;
 }
 
 .gameCenter {
-  top: 32%; 
+  top: 32%;
   left: 17%;
 }
 
 .heroesTeam {
-  top: 23%; 
+  top: 23%;
   left: 88%;
 }
 
 .superFighterLeague {
-  top: 4%; 
+  top: 4%;
   left: 67%;
 }
 
@@ -362,4 +407,315 @@ footer {
 	font-family: 'Press Start 2P' !important;
 	font-size: 24px;
 	padding: 2% 5%;
+}
+
+ .female {
+   color: #ffffff; 
+ }
+
+.grid-container {
+  display: grid;
+  
+  grid-template-columns: calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7)
+  ;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  font-size: 18px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#today {
+  color: #000000;
+  text-align: center;
+  font-size: 24px;
+}
+
+.schedule-weekdays {
+  background-color: #F6CD40;
+}
+
+.schedule-weekend {
+  background-color: #1C1F3D;
+  color: #ffffff;
+}
+
+.schedule-first-tuesday {
+  background-color: #C9116A;
+  color: #ffffff;
+}
+
+.schedule-last-sunday {
+  background-color: #1b85ae;
+  color: #ffffff;
+}
+
+.schedules {
+  padding: 10px;
+}
+/*se rendre au oarc*/
+#carte{
+    height: 365px;
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.text_geolocalisation {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.adress {
+  margin-top: 115px;
+  color: white;
+}
+
+.geolocalisation {
+  background-color: #1C1F3D;
+  margin-top: 20px;
+}
+
+.title_geolocalisation {
+  padding-top: 30px;
+}
+
+
+/*  page info start here */
+.first_titre_info {
+  text-align: center;
+ /*  font-size: 1.5em; */
+  margin: 3em 3%;
+}
+.covid_text {
+  color: red;
+  text-align: center;
+  margin: 3em 3%;
+}
+.info_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: #F6CD40;
+  padding: 2em;
+  /* font-size: 2em; */
+  text-align: center;
+  border-radius: 1em;
+}
+.info_item {
+  margin-left: 9%;
+}
+.text_after_info,
+.last_text_info {
+  text-align: center;
+  margin: 4em 5%;
+}
+/* .last_text_info {
+  font-size: 1.5em;
+} */
+
+.gril_footer {
+  margin: 8em auto 0 5em 6%;
+  }
+/* le page restaurants commence ci-desous */
+.first_titre_r {
+    text-align: center;
+    /* font-size: 1.5em; */
+    margin: 2em auto ;
+}
+
+.container_restaurant {
+    margin: 4em 6%;
+}
+.items_restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 3em;
+    background-color: #dcd4d4;
+    padding: 2em;
+    box-shadow: black 5px outside;
+    margin-bottom: 2em;
+    /* min-width: 28em; */
+}
+
+
+.img_r_left {
+    width: 47%;
+    min-width: 15em;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
+}
+.restaurant_right {
+    width: 45%;
+    min-width: 25em;
+    text-align: center;
+}
+.restaurant_text {
+    margin: 2em auto;
+}
+.restaurant_button {
+    color: black;
+    background-color: yellow;
+    padding: .5em 2em;
+    text-decoration: none;
+    border-radius: .5em;
+
+}
+@media screen and (max-width: 840px){
+    .img_r_left {
+        border-radius: 3em;
+        margin-bottom: 1.5em;
+    }
+}
+
+/* page restaurant detail start */
+
+.restaurant_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container_restaurant_i {
+    padding: 2em;
+    text-align: center;
+}
+.img_i_left {
+    width: 47%;
+    min-width: 15em;
+   
+}
+.restaurant_right_i {
+    margin:3em auto auto 4em ;
+}
+.text_restaurant_i {
+    margin: 3em 6% 5em;
+}
+.gril_footer {
+    margin: 12em auto 0 5em;
+    }
+ .actuality {
+   font-size: 18px;
+ }
+
+/*  page tarifs et tickets start */
+
+
+.first_titre_r {
+  text-align: center;
+ /*  font-size: 1.5em; */
+  margin: auto 2%;
+}
+.tarifs_text {
+  text-align: center;
+  margin: 4em 2%;
+}
+.tarif_age {
+  margin-left: 7%;
+}
+/* .contenaire_tarifs {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.img_tarifs {
+  width: 70%;
+  min-width: 15em;  
+}
+.tarifs_items {
+  text-align: center;
+  
+}
+.text_intems {
+  position: absolute;
+  background-color: #662a60a1;
+  color: snow;
+  padding: .8em 2em;
+  width: 22.5%;
+  top: 18em;
+}
+
+.text_intems3 {
+  left: 70.5%;
+}
+.text_intems2 {
+  left: 38.6%;
+}
+.text_intems1 {
+  left:7%;
+} */
+.contenaire_tarifs {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.img_tarifs {
+  width: 28%;
+  min-width: 15em; 
+  margin: 1.5em; 
+}
+
+.tarifs_text_tiket {
+  text-align: center;
+  margin: 2em auto;
+}
+.text_tarifs_bottom {
+  text-align: center;
+  margin: 3em auto;
+}
+.gril_footer {
+  margin: 12em auto 0 5em;
+  }
+/* page recrute start  */
+.titre_recrute {
+    text-align: center;
+    margin: 2em auto;
+    /* font-size: 1.5em; */
+}
+
+.text_recrute {
+    margin: 0 8%;
+    padding: 2em 2em 6em;
+    background-color: #FFF3F3;
+}
+.contact_recrute {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: initial;
+    background-color: #FFF3F3;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 2em;
+}
+
+.icon_recrute {
+    width: 2.5em;
+    margin-right: 1.5em;
+}
+.gril_footer {
+    margin: 12em auto 0 5em;
 }

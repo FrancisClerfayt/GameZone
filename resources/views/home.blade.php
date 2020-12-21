@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
+    </div>
+  </div>
+</div>
 <div class="container">
   <div class="row justify-content-around">
     <img class="logo_gamezone col-lg-6" src="{{ asset('images/logo_gamezone.png')}}" alt="logo gamezone geek cybercenter">
@@ -15,37 +22,37 @@
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/fairground_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez nos offres</p>
+        <p class="text-center"><a class="offer" href="{{ route('Tarifs.index') }}">Découvrez nos offres</a></p>
       </div>
     </div>
     <div class="card  offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/arcade_girls_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez nos attractions</p>
+        <p class="text-center"><a class="offer" href="{{ route('Attraction.index') }}">Découvrez nos attractions</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/open_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez nos horaires</p>
+        <p class="text-center"><a class="offer" href="{{ route('calendar') }}">Découvrez nos horaires</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/store_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez notre boutique en ligne</p>
+        <p class="text-center"><a class="offer" href="{{ route('miniGame') }}">Découvrez notre mini-jeu</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/underground_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Se rendre au parc ? Par ici !</p>
+        <p class="text-center"><a class="offer" href="{{ route('geolocalisation') }}">Se rendre au parc ? Par ici !</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/restaurant_burger_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez nos restaurants</p>
+        <p class="text-center"><a class="offer" href="{{ route('Restaurant.index') }}">Découvrez nos restaurants</a></p>
       </div>
     </div>
 
@@ -73,7 +80,7 @@
 
   </div>
   <h2 class="text-center title_index">Nos actualités !</h2>
-  <p class="text-center actuality">En raison des conditions sanitaires que vous connaissez, le parc est actuellement fermé jusqu'à nouvel ordre</p>
+  <p class="text-center news">En raison des conditions sanitaires que vous connaissez, le parc est actuellement fermé jusqu'à nouvel ordre</p>
 
 
 

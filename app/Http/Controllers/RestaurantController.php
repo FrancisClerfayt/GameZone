@@ -14,7 +14,8 @@ class RestaurantController extends Controller
 	*/
 	public function index()
 	{
-		
+		$restaurants = Restaurant::all();
+        return view('restaurant.index',['restaurants' => $restaurants]);
 	}
 	
 	/**
@@ -24,7 +25,7 @@ class RestaurantController extends Controller
 	*/
 	public function create()
 	{
-		//
+		return view('restaurant.create');
 	}
 	
 	/**
@@ -41,16 +42,22 @@ class RestaurantController extends Controller
 	/**
 	* Display the specified resource.
 	*
-	* @param  \App\Restaurant  $restaurant
+	* @param  int $id
 	* @return \Illuminate\Http\Response
 	*/
-	public function show(Restaurant $restaurant)
+	/* public function show($id)
 	{
-		//
+		$restaurant = Restaurant::find($id);
+		return view('restaurant.show',['restaurant' => $restaurant]);
+	} */
+	public function show($id)
+	{
+		$restaurant = Restaurant::find($id);
+		return view('restaurant.show')->with('restaurant' , $restaurant);
 	}
 	
-	/**
-	* Show the form for editing the specified resource.
+	
+	/* Show the form for editing the specified resource.
 	*
 	* @param  \App\Restaurant  $restaurant
 	* @return \Illuminate\Http\Response
