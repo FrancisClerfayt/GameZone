@@ -1,7 +1,7 @@
 @extends('layouts.app') 
 
 @section('content')
-<h1>INFOS</h1>
+<h1 class="mt-4 mb-5">INFOS</h1>
 <h2 class="first_titre_info">Covid-19</h2>
 <p class="covid_text">
 	En cette période difficile, le parc est actuellement fermé jusqu’a nouvel ordre. <br>

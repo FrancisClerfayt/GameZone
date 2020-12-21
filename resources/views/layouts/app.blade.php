@@ -74,9 +74,9 @@
 								</div>
 							</div>
 						</li>
-						<li class="nav-item col">
-							{{-- <a class="menu nav-link nav-item" href="#">Boutique</a> --}}
-						</li>
+						{{-- <li class="nav-item col">
+							<a class="menu nav-link nav-item" href="#">Boutique</a>
+						</li> --}}
 						<!-- Authentication Links -->
 						@guest
 						<a class="menu nav-item nav-link" href="{{ route('login') }}">
@@ -96,7 +96,7 @@
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								@if (Auth::user()->isAdmin)
-								<a class="dropdown-item" href="">Page d'admministration</a>
+								<a class="dropdown-item" href="{{route('admin')}}">Page d'admministration</a>
 								@endif
 								<a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="dropdown-item">
 									Mon Compte
@@ -115,24 +115,27 @@
 				</div>
 			</div>
 		</nav>
-
-
-
-		<main class="py-4">
+		
+		<main>
+			@if(session()->has('message'))
+			<div class="container-fluid justify-content-center align-items-center">
+				{{ session()->get('message') }}
+			</div>
+			@endif
 			@yield('content')
 		</main>
-
-		<footer class="w-100">
+		
+		<footer class="container-fluid">
 			<div class="row">
 				<div class="timetable text-center col-sm-12 col-md-12 col-lg-4">
 					<h4 class="text_footer">Horaires du parc :</h4>
-					<p class="text_footer">Du lundi au jeudi : 9h-19h</p>
-					<p class="text_footer">Du vendredi au samedi : 9h-20h</p>
-					<p class="text_footer">Le dimanche : 9h – 18h</p>
+					<p class="text_footer">Du lundi au jeudi : 9h - 19h</p>
+					<p class="text_footer">Du vendredi au samedi : 9h - 20h</p>
+					<p class="text_footer">Le dimanche : 9h - 18h</p>
 					<p class="text_footer">Fermé tous les premiers mardis du mois</p>
 					<p class="text_footer">Besoin d'aide ? 08 59 62 08 59</p>
 				</div>
-				<div class="text-center col-sm-12 col-md-12 col-lg-4 pt-lg-5 pt-sm-1">
+				<div class="text-center col-sm-12 col-md-10 mx-md-auto col-lg-4 pt-lg-5 pt-sm-1">
 					<h4 class="text_footer">Suivez-nous !</h4>
 					<div class="logo">
 						<a href="#" target="_blank"><i class="icon fab fa-facebook fa-3x"></i></a>
@@ -152,7 +155,7 @@
 			</div>
 			<div class="row justify-content-around text-center">
 				<p><a class="text_footer col-lg-4" href="{{ route('terms_of_sales') }}">Conditions de vente</a></p>
-				<p><a class="text_footer col-lg-4" href="#">© Copyright 2020 GameZone</a></p>
+				<p>© Copyright 2020 GameZone</p>
 				<p><a class="text_footer col-lg-4" href="{{ route('legal_notice') }}">Mentions Légales</a></p>
 			</div>
 		</footer>

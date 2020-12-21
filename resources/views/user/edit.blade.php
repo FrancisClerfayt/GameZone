@@ -85,7 +85,7 @@
 					
 					<div class="form-group row">
 						<div class="col-lg-3 col-md-6 col-sm-10">
-							<input type="radio" name="avatar" id="avatar1" value="images/avatar_eagle.png" checked>
+							<input type="radio" name="avatar" id="avatar1" value="images/avatar_eagle.png">
 							<label for="avatar1" id="avatar1">
 								<img class="w-100" src=" {{ asset('images/avatar_eagle.png') }} " alt="an avatar with an eagle head">
 							</label>
@@ -118,7 +118,7 @@
 						</div>
 					</div>
 				</form>
-				<form method="POST" action="{{ route('User.destroy', ['User' => $user->id]) }}">
+				<form method="POST" action="{{ route('User.destroy', ['User' => $user->id]) }}" style="display: contents">
 				@csrf
 				@method('DELETE')
 				<input class="btn btn-danger" type="submit" value="Supprimer votre compte">

@@ -76,17 +76,20 @@ class Board {
 				}
 			}
 		);
-
+		console.log("cleared line : "+lines);
 		if( lines > 0 ) {
 			game.score += this.calculatePoints(lines);
+			console.log("nb lines : " + game.lines);
 			game.lines += lines;
-		}
+			console.log("nb lines : " + game.lines);
 
-		if( game.lines >= LINES_PER_LEVEL){
-			game.level++;
-			game.lines -= LINES_PER_LEVEL;
-			this.time.level = LEVEL[game.level];
+			if( game.lines >= LINES_PER_LEVEL){
+				game.level++;
+				game.lines -= LINES_PER_LEVEL;
+				this.time.level = LEVEL[game.level];
+			}
 		}
+		
 	}
 
 	isValidMove(piece) {
