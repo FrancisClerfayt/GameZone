@@ -115,6 +115,26 @@ h2 {
 }
 /*se rendre au oarc*/
 #carte{
-    height: 50vh;
+    height: 365px;
     width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.text_geolocalisation {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.adress {
+  margin-top: 115px;
+  color: white;
+}
+
+.geolocalisation {
+  background-color: #1C1F3D;
+  margin-top: 20px;
+}
+
+.title_geolocalisation {
+  padding-top: 30px;
 }
