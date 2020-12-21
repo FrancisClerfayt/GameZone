@@ -1,24 +1,28 @@
-let canvas = document.getElementById('board');
-let contextBoard = canvas.getContext('2d');
+const canvas = document.getElementById('board');
+const contextBoard = canvas.getContext('2d');
 
-let canvasNext = document.getElementById('next');
-let contextNext = canvasNext.getContext('2d');
+const canvasNext = document.getElementById('next');
+const contextNext = canvasNext.getContext('2d');
 
 let gameValues = {
 	score: 0,
 	level: 0,
-	nbLines: 0
+	lines: 0
 }
 
 function updateCounts(key, value) {
 	let element = document.getElementById(key);
+	console.log(element);
 	if ( element ) {
 		element.innerHTML = value;
 	}
 }
 
 let game = new Proxy(gameValues, {
-	set: (target, key, value) => {
+	set: function(target, key, value) {
+		console.log("target : "+target);
+		console.log("key : "+key);
+		console.log("value : "+value);
 		target[key] = value;
 		updateCounts(key, value);
 		return true;
@@ -67,11 +71,11 @@ function addListener() {
 				while ( board.isValidMove(p) ) {
 					game.score += POINTS.HARD_DROP;
 					board.currentPiece.move(p);
-					p = moves['ArrowDown'](board.currentPiece);
+					p = moves[KEYS.DOWN](board.currentPiece);
 				}
 			} else if ( board.isValidMove(p) ) {
 				board.currentPiece.move(p);
-				if(event.code === 'ArrowDown') {
+				if(event.code === KEYS.DOWN) {
 					game.score += POINTS.SOFT_DROP;
 				}
 			}

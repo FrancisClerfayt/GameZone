@@ -12,7 +12,7 @@ class Piece {
 	}
 	
 	spawn() {
-		this.typeId = this.randomPiece();
+		this.typeId = this.randomPiece(COLORS.length-1);
 		this.shape = SHAPES[this.typeId];
 		this.color = COLORS[this.typeId];
 		this.x = 0;
@@ -41,14 +41,16 @@ class Piece {
 	}
 	
 	setStartingPosition() {
-		if (this.typeId === 4) {
+		if (this.typeId === 7) {
 			this.x = 4;
 		} else {
 			this.x = 3;
 		}
 	}
 	
-	randomPiece() {
-		return Math.floor( Math.random() * 7 );
+	randomPiece(nbPieces) {
+		let rn = Math.floor( Math.random() * nbPieces + 1 );
+		console.log(rn);
+		return rn;
 	}
 }
