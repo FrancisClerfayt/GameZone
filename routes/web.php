@@ -34,6 +34,13 @@ Route::resource('Restaurant', 'RestaurantController');
 Route::resource('Attraction', 'AttractionController');
 Route::get('Attraction/adminIndex', 'AttractionController@adminIndex')->name('Attraction.adminIndex');
 Route::resource('User', 'UserController');
+Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
 Route::resource('Product', 'ProductController');
 Route::resource('Cart', 'CartController');
 
+Route::get('/terms_of_sales','TermsOfSales@index')->name('terms_of_sales');
+
+Route::resource('Tarifs', 'TarifsController');
+Route::resource('Avatar', 'AvatarController');
+
+Route::resource('Recrute', 'RecruteController');
