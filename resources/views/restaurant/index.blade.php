@@ -15,7 +15,7 @@
                          <div class="restaurant_right">  
                             <h3>{{$restaurant->name}}</h3>
                             <p class="restaurant_text">{{$restaurant->description}}</p>
-                            <a href=" {{ route('Restaurant.show', ['id', $restaurant->id]) }} " class="restaurant_button">En savoir plus</a>
+                            <a href=" {{ route('Restaurant.show', ['Restaurant' => $restaurant->id]) }} " class="restaurant_button">En savoir plus</a>
 
                          </div>
                     </div>
