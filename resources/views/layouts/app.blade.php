@@ -143,17 +143,17 @@
 				</div>
 				<div class="info text-center col-sm-12 col-md-12 col-lg-4">
 					<ul>
-						<li><a class="text_footer" href="#">A propos du parc</a></li>
-						<li><a class="text_footer" href="#">On recrute</a></li>
-						<li><a class="text_footer" href="#">Dans la presse</a></li>
-						<li><a class="text_footer" href="#">Nous contacter</a></li>
+						<li><a class="text_footer" href="{{ route('info') }}">A propos du parc</a></li>
+						<li><a class="text_footer" href="{{ route('Recrute.index') }}">On recrute</a></li>
+						<li><a class="text_footer" href="">Dans la presse</a></li>
+						<li><a class="text_footer" href="tel:0859620859">Nous contacter</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="row justify-content-around text-center">
-				<p><a class="text_footer col-lg-4" href="#">Conditions de vente</a></p>
+				<p><a class="text_footer col-lg-4" href="{{ route('terms_of_sales') }}">Conditions de vente</a></p>
 				<p><a class="text_footer col-lg-4" href="#">© Copyright 2020 GameZone</a></p>
-				<p><a class="text_footer col-lg-4" href="#">Mentions Légales</a></p>
+				<p><a class="text_footer col-lg-4" href="{{ route('legal_notice') }}">Mentions Légales</a></p>
 			</div>
 		</footer>
 	</div>
