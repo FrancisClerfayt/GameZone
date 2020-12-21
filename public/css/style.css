@@ -438,7 +438,7 @@ footer {
 /* le page restaurants commence ci-desous */
 .first_titre_r {
     text-align: center;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     margin: 2em auto ;
 }
 
