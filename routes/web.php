@@ -33,6 +33,7 @@ Route::resource('Restaurant', 'RestaurantController');
 Route::resource('Attraction', 'AttractionController');
 Route::get('Attraction/adminIndex', 'AttractionController@adminIndex')->name('Attraction.adminIndex');
 Route::resource('User', 'UserController');
+Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
 Route::resource('Product', 'ProductController');
 Route::resource('Cart', 'CartController');
 
