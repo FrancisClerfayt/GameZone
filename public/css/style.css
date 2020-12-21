@@ -230,7 +230,7 @@ footer {
 
 /* restaurants */
 .restaurant1 {
-  top: 42%; 
+  top: 42%;
   left: 29%;
 }
 
@@ -256,7 +256,7 @@ footer {
 
 /* Shops */
 .shop1 {
-  top: 55%; 
+  top: 55%;
   left: 34%;
 }
 
@@ -282,7 +282,7 @@ footer {
 
 /* services */
 .service1 {
-  top: 44%; 
+  top: 44%;
   left: 49%;
 }
 
@@ -308,47 +308,47 @@ footer {
 
 /* Attractions */
 .awesomeHeroes {
-  top: 23%; 
+  top: 23%;
   left: 29%;
 }
 
 .battleKart {
-  top: 59%; 
+  top: 59%;
   left: 57%;
 }
 
 .championsLeague {
-  top: 43%; 
+  top: 43%;
   left: 83%;
 }
 
 .championsLeagueSurvivor {
-  top: 8%; 
+  top: 8%;
   left: 38%;
 }
 
 .contagionVR {
-  top: 4%; 
+  top: 4%;
   left: 80%;
 }
 
 .fighterHardTeam {
-  top: 51%; 
+  top: 51%;
   left: 19%;
 }
 
 .gameCenter {
-  top: 32%; 
+  top: 32%;
   left: 17%;
 }
 
 .heroesTeam {
-  top: 23%; 
+  top: 23%;
   left: 88%;
 }
 
 .superFighterLeague {
-  top: 4%; 
+  top: 4%;
   left: 67%;
 }
 
@@ -428,3 +428,69 @@ footer {
 .schedules {
   padding: 10px;
 }
+/*se rendre au oarc*/
+#carte{
+    height: 365px;
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.text_geolocalisation {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.adress {
+  margin-top: 115px;
+  color: white;
+}
+
+.geolocalisation {
+  background-color: #1C1F3D;
+  margin-top: 20px;
+}
+
+.title_geolocalisation {
+  padding-top: 30px;
+}
+
+
+/*  page info start here */
+.first_titre_info {
+  text-align: center;
+ /*  font-size: 1.5em; */
+  margin: 3em 3%;
+}
+.covid_text {
+  color: red;
+  text-align: center;
+  margin: 3em 3%;
+}
+.info_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: #F6CD40;
+  padding: 2em;
+  /* font-size: 2em; */
+  text-align: center;
+  border-radius: 1em;
+}
+.info_item {
+  margin-left: 9%;
+}
+.text_after_info,
+.last_text_info {
+  text-align: center;
+  margin: 4em 5%;
+}
+/* .last_text_info {
+  font-size: 1.5em;
+} */
+
+.gril_footer {
+  margin: 8em auto 0 5em 6%;
+  }
