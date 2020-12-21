@@ -40,13 +40,13 @@
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/store_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Découvrez notre boutique en ligne</p>
+        <p class="text-center offer"><a href="{{ route('miniGame') }}">Découvrez notre mini-jeu</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
       <img src="{{ asset('images/underground_index.png')}}" class="card-img-top" alt="...">
       <div class="card-body title_card">
-        <p class="text-center offer">Se rendre au parc ? Par ici !</p>
+        <p class="text-center offer"><a href="{{ route('Tarifs.index') }}">Se rendre au parc ? Par ici !</a></p>
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
