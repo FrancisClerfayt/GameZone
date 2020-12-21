@@ -2,9 +2,9 @@
 
 @section('content')
 
-<img src="{{ asset('images/open.jpg')}}" alt="open neon sign" style="width: 100%;">
+<img src="{{ asset('images/open.jpg')}}" alt="open neon sign" style="width: 100%">
 
-	<h1 class="mt-5 mb-5">NOS HORAIRES</h1>
+	<h1 class="mt-4 mb-5">NOS HORAIRES</h1>
 	<h2 id="today"> Aujourd'hui nous sommes le : </h2>
 	<section>
 	<div id="app-calendar row justify-content-around">

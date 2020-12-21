@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+
 <section class="mapContainer">
-	<h2>Plan du parc</h2>
+	<h1 class="mt-4 mb-5">Plan du parc</h1>
 	<div class="legend">
 		<div class="filters">
 			<div class="form-group">

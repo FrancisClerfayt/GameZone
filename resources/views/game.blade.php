@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+52
 <div class="container-fluid">
 	<div class="gameGrid">
 		<canvas class="gameBoard" id="board"></canvas>
 		<div class="stats">
 			<div>
-				<h2>Tetris</h2>
+				<h1>Tetris</h1>
 				<p>Score : <span id="score">0</span></p>
 				<p>Lignes : <span id="nbLines">0</span></p>
 				<p>Level : <span id="level">0</span></p>
