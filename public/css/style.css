@@ -6,11 +6,21 @@
 h1 {
   font-family: 'Commando';
   text-align: center;
+  font-size: 42px;
 }
 
 h2 {
   font-size: 36px;
 }
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
 /*header*/
 
 .navbar {
@@ -57,9 +67,7 @@ h2 {
 
 
 
-h3 {
-  font-size: 18px;
-}
+
 /*INDEX*/
 
 .presentation {
@@ -374,23 +382,49 @@ footer {
    color: #ffffff; 
  }
 
-
-
 .grid-container {
   display: grid;
+  
   grid-template-columns: calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7) calc(100%/7)
   ;
   padding: 10px;
-  margin: 0 5%;
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+  padding: 2px;
+  font-size: 18px;
   text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #today {
   color: #000000;
+  text-align: center;
+  font-size: 24px;
+}
+
+.schedule-weekdays {
+  background-color: #F6CD40;
+}
+
+.schedule-weekend {
+  background-color: #1C1F3D;
+  color: #ffffff;
+}
+
+.schedule-first-tuesday {
+  background-color: #C9116A;
+  color: #ffffff;
+}
+
+.schedule-last-sunday {
+  background-color: #1b85ae;
+  color: #ffffff;
+}
+
+.schedules {
+  padding: 10px;
 }
