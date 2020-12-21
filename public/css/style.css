@@ -519,26 +519,30 @@ footer {
  }
 
 /*  page tarifs et tickets start */
+
+
 .first_titre_r {
   text-align: center;
   font-size: 1.5em;
+  margin: auto 2%;
 }
 .tarifs_text {
   text-align: center;
-  margin: 4em auto;
-}
-.contenaire_tarifs {
-  padding: 2em;
-  display: flex;
-  flex-direction: row;
- /*  flex-wrap: wrap; */
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  margin: 4em 2%;
 }
 .tarif_age {
   margin-left: 7%;
 }
+/* .contenaire_tarifs {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 
 .img_tarifs {
   width: 70%;
@@ -565,6 +569,22 @@ footer {
 }
 .text_intems1 {
   left:7%;
+} */
+.contenaire_tarifs {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.img_tarifs {
+  width: 28%;
+  min-width: 15em; 
+  margin: 1.5em; 
 }
 
 .tarifs_text_tiket {
