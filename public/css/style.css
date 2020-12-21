@@ -365,7 +365,6 @@ footer {
 	border: 2px solid black;
 }
 
-<<<<<<< HEAD
 .playButton {
 	background-color: #1C1F3D;
 	cursor: pointer;
@@ -373,7 +372,6 @@ footer {
 	font-size: 24px;
 	padding: 2% 5%;
 }
-=======
 /*se rendre au oarc*/
 #carte{
     height: 365px;
@@ -399,4 +397,3 @@ footer {
 .title_geolocalisation {
   padding-top: 30px;
 }
->>>>>>> feature/geolocalisation
