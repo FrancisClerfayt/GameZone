@@ -2,6 +2,11 @@
 
 @section('content')
 <div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <img class="jumbotron_image" src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
+    </div>
+  </div>
   <div class="row justify-content-around">
     <img class="logo_gamezone col-lg-6" src="{{ asset('images/logo_gamezone.png')}}" alt="logo gamezone geek cybercenter">
     <p class="presentation col-lg-6">
