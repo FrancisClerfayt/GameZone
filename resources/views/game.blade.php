@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid p-5">
+<div class="container-fluid p-5 tetris-background">
 	<div class="gameGrid">
 		<canvas class="gameBoard" id="board"></canvas>
 		<div class="stats">

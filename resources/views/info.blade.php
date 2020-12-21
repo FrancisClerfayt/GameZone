@@ -1,6 +1,7 @@
 @extends('layouts.app') 
 
 @section('content')
+<img src="{{ asset('images/gamezone.jpg')}}" alt="game zone" style="width: 100%;">
 <h1 class="mt-4 mb-5">INFOS</h1>
 <h2 class="first_titre_info">Covid-19</h2>
 <p class="covid_text">

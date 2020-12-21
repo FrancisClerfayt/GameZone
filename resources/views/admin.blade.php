@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+	
 		<div class="container">
 			<div class="row justify-content-center">
+				<h1 class="mt-4 mb-5">Panneau d'administration</h1>
 				<div class="col-12">
 					<div class="row justify-content-center align-items-center">
 						<div class="col-lg-3 col-md-6 col-sm-12 px-4 py-2">

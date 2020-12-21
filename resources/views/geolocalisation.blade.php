@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<img src="{{ asset('images/underground.jpg')}}" alt="game zone" style="width: 100%; height: 550px">
 <h1 class="mt-4 mb-5">TROUVEZ VOTRE CHEMIN JUSQU'A NOUS !</h1>
 <section class="container geolocalisation">
   <div class="row">

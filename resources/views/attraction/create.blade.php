@@ -5,7 +5,7 @@
 	<div class="row justify-content-center align-items-center">
 		<div class="card">
 			<div class="card-header">
-				<h2>Ajouter une Attraction</h2>
+				<h1 class="mt-4 mb-5">Ajouter une Attraction</h1>
 			</div>
 			<div class="card-body">
 				<form action="{{route('Attraction.store')}}" class="form" method="POST" enctype="multipart/form-data">

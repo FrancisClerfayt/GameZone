@@ -5,7 +5,7 @@
 			<div class="row justify-content-center align-item-center">
 				<div class="card">
 					<div class="card-header">
-						<h2>Modifier une attraction</h2>
+						<h1 class="mt-4 mb-5">Modifier une attraction</h1>
 					</div>
 					<div class="card-body">
 						<form action="{{route('Attraction.update', ['Attraction' => $attraction->id])}}" class="form" enctype="multipart/form-data" method="POST">

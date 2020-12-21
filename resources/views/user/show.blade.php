@@ -5,10 +5,10 @@
 		<div class="card">
 			<div class="card-body row">
 				<div class="col">
-					<img src="{{ asset($user->avatar) }}" alt="The user avatar">
+					<img src="{{ asset($user->avatar) }}" alt="avatar utilisateur">
 				</div>
 				<div class="col">
-					<h2 class="text-primary">Votre Compte</h2>
+					<h1 class="text-primary mt-4 mb-5">Votre Compte</h1>
 					<p>Votre identifiant : <span> {{ $user->user_name }} </span></p>
 					<p>Votre email : <span> {{ $user->email }} </span></p>
 					<p>Votre nom : <span> {{ $user->last_name }} </span></p>
