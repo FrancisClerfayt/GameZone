@@ -42,4 +42,9 @@ class HomeController extends Controller
   public function geolocalisation(){
     return view('geolocalisation');
   }
+
+  public function info()
+    {
+        return view('info');
+    }
 }
