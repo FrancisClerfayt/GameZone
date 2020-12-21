@@ -16,8 +16,8 @@
 		</div>
 	</div>
 </div>
-<script src="js/constant.js"></script>
-<script src="js/piece.js"></script>
-<script src="js/board.js"></script>
-<script src="js/game.js"></script>
+<script src="{{ asset('js/constant.js') }}"></script>
+<script src="{{ asset('js/piece.js') }}"></script>
+<script src="{{ asset('js/board.js') }}"></script>
+<script src="{{ asset('js/game.js') }}"></script>
 @endsection
