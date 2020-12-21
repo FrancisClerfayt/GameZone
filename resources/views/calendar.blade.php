@@ -22,9 +22,9 @@
 	<div class="col-lg-5 col-md-10 col-sm-6 mx-auto mb-4">
 	<h3>Les horaires d’ouverture et de fermeture</h3>
 	<ul class="schedule-weekdays schedules">Du lundi au jeudi : 9h-19h</ul>
-	<ul class="schedule-weekend schedules"> Du vendredi au samedi : 9h-20h : Tous les vendredis et samedis: nocturnes</ul>
+	<ul class="schedule-weekend schedules"> Du vendredi au samedi (journées prolongées) : 9h-20h</ul>
 	<ul class="schedule-first-tuesday schedules">Fermé tous les premiers mardi du mois</ul>
-	<ul class="schedule-last-sunday schedules">Tous les derniers dimanches du mois soirée spéciale</ul>
+	<ul class="schedule-last-sunday schedules">Tous les derniers dimanches du mois : journée spéciale</ul>
 	</div>
 </section>
 	<script src="{{asset('js/calendar.js')}}"></script>
