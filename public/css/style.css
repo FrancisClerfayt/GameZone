@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
@@ -11,8 +12,16 @@ h1 {
 h2 {
   font-size: 36px;
 }
-/*header*/
 
+h3 {
+  font-size: 18px;
+}
+
+footer {
+  background-color: #1C1F3D;
+}
+
+/*header*/
 .navbar {
   background-color: #1C1F3D;
 }
@@ -20,6 +29,7 @@ h2 {
 .menu {
   color: #F6CD40;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .ham {
@@ -55,11 +65,6 @@ h2 {
   opacity: 80%;
 }
 
-
-
-h3 {
-  font-size: 18px;
-}
 /*INDEX*/
 
 .presentation {
@@ -97,11 +102,7 @@ h3 {
   font-size: 18px;
 }
 
-/*Footer*/
-footer {
-  background-color: #1C1F3D;
-}
-
+/* Footer */
 .text_footer {
   color: #F6CD40;
 }
@@ -126,12 +127,7 @@ footer {
   padding-top: 40px;
   line-height: 30px;
 }
-.actuality {
-  font-size: 18px;
-}
-
 /* MAP CSS */
-
 .mapContainer {
   width: 100%;
   min-height: 100vh;
@@ -365,7 +361,6 @@ footer {
 	border: 2px solid black;
 }
 
-<<<<<<< HEAD
 .playButton {
 	background-color: #1C1F3D;
 	cursor: pointer;
@@ -373,12 +368,7 @@ footer {
 	font-size: 24px;
 	padding: 2% 5%;
 }
-=======
- .actuality {
-   font-size: 18px;
- }
 
- .female {
-   color: #ffffff; 
- }
->>>>>>> feature/attractions
+.female {
+  color: #ffffff; 
+}
