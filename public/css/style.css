@@ -526,11 +526,6 @@ footer {
   margin: 8em auto 0 5em 6%;
   }
 /* le page restaurants commence ci-desous */
-.first_titre_r {
-    text-align: center;
-    /* font-size: 1.5em; */
-    margin: 2em auto ;
-}
 
 .container_restaurant {
     margin: 4em 6%;
@@ -611,17 +606,12 @@ footer {
 /*  page tarifs et tickets start */
 
 
-.first_titre_r {
-  text-align: center;
- /*  font-size: 1.5em; */
-  margin: auto 2%;
-}
-.tarifs_text {
+.price_text {
   text-align: center;
   margin: 4em 2%;
 }
-.tarif_age {
-  margin-left: 7%;
+.price_age {
+  text-align: center;
 }
 /* .contenaire_tarifs {
   padding: 2em;
@@ -660,28 +650,27 @@ footer {
 .text_intems1 {
   left:7%;
 } */
-.contenaire_tarifs {
+.container_prices {
   padding: 2em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
 }
 
 
-.img_tarifs {
+.img_prices {
   width: 28%;
   min-width: 15em; 
   margin: 1.5em; 
 }
 
-.tarifs_text_tiket {
+.prices_text_ticket {
   text-align: center;
   margin: 2em auto;
 }
-.text_tarifs_bottom {
+.text_prices_bottom {
   text-align: center;
   margin: 3em auto;
 }
