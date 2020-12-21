@@ -46,7 +46,7 @@ h2 {
 /*  page info start here */
 .first_titre_info {
   text-align: center;
-  font-size: 1.5em;
+ /*  font-size: 1.5em; */
   margin: 3em 3%;
 }
 .covid_text {
@@ -63,7 +63,7 @@ h2 {
   background-color: purple;
   color: #F6CD40;
   padding: 2em;
-  font-size: 2em;
+  /* font-size: 2em; */
   text-align: center;
   border-radius: 1em;
 }
@@ -75,9 +75,9 @@ h2 {
   text-align: center;
   margin: 4em 5%;
 }
-.last_text_info {
+/* .last_text_info {
   font-size: 1.5em;
-}
+} */
 
 .gril_footer {
   margin: 8em auto 0 5em 6%;
