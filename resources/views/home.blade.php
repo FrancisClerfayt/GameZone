@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="container-fluid">
-      <img src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos">
+      <img src="{{ asset ('images/header_index.png')}}" alt="Parc d'attraction jeux vidéos" style="width:100%">
 </div>
 <div class="container">
   <div class="row justify-content-around">
     <img class="logo_gamezone col-lg-6" src="{{ asset('images/logo_gamezone.png')}}" alt="logo gamezone geek cybercenter">
     <p class="presentation col-lg-6">
-      GEEK CYBERCENTER est une SAS au capital de 45 824 123 euros. Il s’agit d’un groupe possédant plusieurs parcs d’attractions dans le monde comme : BATTLE KART VR, FORTNITE
+      GEEK CYBERCENTER est un groupe possédant plusieurs parcs d’attractions dans le monde comme : BATTLE KART VR, FORTNITE
       ADVENTURE, PUBG SURVIVOR. En septembre 2019, le groupe a ouvert un nouveau parc : GAME ZONE. Ce dernier sera le premier parc d’attraction au monde entièrement dédié à l’univers des jeux-vidéo.
     </p>
 
