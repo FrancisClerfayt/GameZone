@@ -10,5 +10,4 @@ class TarifsController extends Controller
     {
         return view('tarifs');
     }
-    
 }

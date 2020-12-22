@@ -14,7 +14,7 @@
 					<p>Votre nom : <span> {{ $user->last_name }} </span></p>
 					<p>Votre prénom : <span> {{ $user->first_name }} </span></p>
 					<p>Votre ville : <span> {{ $user->city }} </span></p>
-					<a class="btn btn-primary text-secondary" href=" {{ route('User.edit', ['User' => $user->id]) }} ">
+					<a class="btn btn-primary text-secondary" href="{{route('User.edit', ['User' => $user->id])}}">
 						Modifiez vos informations
 					</a>
 				</div>

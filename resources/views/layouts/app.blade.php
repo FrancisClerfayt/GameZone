@@ -96,13 +96,13 @@
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								@if (Auth::user()->isAdmin)
-								<a class="dropdown-item" href="{{route('admin')}}">Page d'admministration</a>
+								<a class="dropdown-item" href="{{route('admin')}}">Page d'administration</a>
 								@endif
-								<a href=" {{ route('User.show', ['User' => Auth::user()->id]) }} " class="dropdown-item">
+								<a href="{{route('User.show', ['User' => Auth::user()->id])}}" class="dropdown-item">
 									Mon Compte
 								</a>
-								<a class="dropdown-item" href="{{ route('logout') }}"	onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-									{{ __('Logout') }}
+								<a class="dropdown-item" href="{{route('logout')}}"	onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+									{{__('Logout')}}
 								</a>
 
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

@@ -38,9 +38,9 @@
 				<label for="restrictionFilter">Filtrer selon restriction</label>
 				<select name="restrictionFilter" id="restrictionFilter">
 					<option value="all" selected>Toutes les attractions</option>
-					<option value="noRestriction">Accessible à tous</option>
-					<option value="more1m10">Taille minimum 1m10</option>
-					<option value="more1m30">Taille minimum 1m30</option>
+					<option value="noRestriction">Je fais moins de 1m10</option>
+					<option value="more1m10">Je fais plus de 1m10</option>
+					<option value="more1m30">Je fais plus de 1m30</option>
 				</select>
 			</div>
 		</div>

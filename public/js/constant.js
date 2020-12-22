@@ -3,7 +3,7 @@
 
 const COLUMNS = 10;
 const ROWS = 20;
-const BLOCK = 30;
+const BLOCK = 25;
 const LINES_PER_LEVEL = 10;
 
 // Creating a color array, a color index is a piece color

@@ -21,10 +21,10 @@
 								<td>{{$attraction->xp_gain}}</td>
 								<td>{{$attraction->restriction}}</td>
 								<td>
-									<a href="{{ route('Attraction.edit', ['Attraction' => $attraction->id]) }}" class="btn btn-primary">
+									<a href="{{route('Attraction.edit', ['Attraction'=>$attraction->id])}}" class="btn btn-primary">
 										<span class="fa fa-edit"> Modifier</span>
 									</a>
-									<form action="{{ route('Attraction.destroy', ['Attraction' => $attraction->id]) }}" method="POST" style="display: contents">
+									<form action="{{route('Attraction.destroy', ['Attraction'=>$attraction->id])}}" method="POST" style="display: contents">
 										@csrf
 										@method('DELETE')
 										<button class="btn btn-danger" type="submit">

@@ -18,6 +18,12 @@ class AttractionController extends Controller
         return view ('attraction.index',['attractions'=>$attractions]);
     }
 
+    public function adminIndex()
+    {
+        $attractions = Attraction::all();
+        return view ('attraction.adminIndex',['attractions'=>$attractions]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
