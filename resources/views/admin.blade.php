@@ -21,7 +21,7 @@
 						<div class="col-lg-3 col-md-6 col-sm-12 px-4 py-2">
 							<h2>Restaurants</h2>
 							<div>
-								<a href="" class="btn btn-primary text-secondary mx-4 my-2">
+								<a href="{{route('Restaurant.create')}}" class="btn btn-primary text-secondary mx-4 my-2">
 									Ajouter un restaurant
 								</a>
 								<a href="" class="btn btn-primary text-secondary mx-4 my-2">

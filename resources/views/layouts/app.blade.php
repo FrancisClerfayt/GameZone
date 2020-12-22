@@ -30,35 +30,35 @@
 	<div id="app">
 		<nav class="navbar navbar-expand-md shadow-sm">
 			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{__('Toggle navigation')}}">
 					<span class="fas fa-bars ham"></span>
 				</button>
 
 				<div class="collapse navbar-collapse " id="navbarSupportedContent">
 					<ul class="navbar-nav row justify-content-center align-items-center">
 						<li class="nav-item col">
-							<a class="menu nav-link " href=" {{ route('Attraction.index') }} ">
+							<a class="menu nav-link" href="{{route('Attraction.index')}}">
 								Attractions
 							</a>
 						</li>
 						<li class="nav-item col">
-							<a class="menu nav-link " href="{{ route('map') }}">
+							<a class="menu nav-link" href="{{route('map')}}">
 								Plan du parc
 							</a>
 						</li>
 						<li class="nav-item col">
-							<a class="menu nav-link " href="{{ route('info') }}">
+							<a class="menu nav-link" href="{{route('info')}}">
 								Infos
 							</a>
 						</li>
 						<li class="nav-item col">
-							<a href=" {{ route('home') }} ">
-								<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="logo GameZone le parc d'attraction entièrement dédié aux jeux-vidéo">
+							<a href="{{route('home')}}">
+								<img class="logo_header" src="{{asset('images/logo_gamezone.png')}}" alt="logo GameZone le parc d'attraction entièrement dédié aux jeux-vidéo">
 							</a>
 						</li>
 						<li class=" nav-item col">
-							<a class="menu nav-link" href=" {{ route('miniGame') }} ">
-								My game
+							<a class="menu nav-link" href="{{route('miniGame')}}">
+								Mini-Jeux
 							</a>
 						</li>
 						<li class="nav-item col">
@@ -67,10 +67,18 @@
 									Préparer votre visite
 								</a>
 								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-									<a class="dropdown-item btn" href="{{ route('geolocalisation') }}">Se rendre au parc</a>
-									<a class="dropdown-item btn" href="{{ route('Tarifs.index') }}">Tarifs et billeteries</a>
-									<a class="dropdown-item btn" href="{{ route('calendar') }}">Horaires et calendrier</a>
-									<a class="dropdown-item btn" href="{{ route('Restaurant.index') }}">Nos restaurants</a>
+									<a class="dropdown-item btn" href="{{route('geolocalisation')}}">
+										Se rendre au parc
+									</a>
+									<a class="dropdown-item btn" href="{{route('Tarifs.index') }}">
+										Tarifs et billeteries
+									</a>
+									<a class="dropdown-item btn" href="{{route('calendar')}}">
+										Horaires et calendrier
+									</a>
+									<a class="dropdown-item btn" href="{{route('Restaurant.index')}}">
+										Nos restaurants
+									</a>
 								</div>
 							</div>
 						</li>
@@ -102,7 +110,7 @@
 									Mon Compte
 								</a>
 								<a class="dropdown-item" href="{{route('logout')}}"	onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-									{{__('Logout')}}
+									{{__('Déconnexion')}}
 								</a>
 
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
