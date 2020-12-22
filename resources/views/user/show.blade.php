@@ -5,7 +5,7 @@
 		<div class="card">
 			<div class="card-body row">
 				<div class="col">
-					<img src="{{ asset($user->avatar) }}" alt="avatar utilisateur">
+					<img src="{{asset($user->avatar)}}" alt="avatar utilisateur">
 				</div>
 				<div class="col">
 					<h1 class="text-primary mt-4 mb-5">Votre Compte</h1>

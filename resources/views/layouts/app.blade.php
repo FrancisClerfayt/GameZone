@@ -155,7 +155,7 @@
 			</div>
 			<div class="row justify-content-around text-center">
 				<p><a class="text_footer col-lg-4" href="{{ route('terms_of_sales') }}">Conditions de vente</a></p>
-				<p>© Copyright 2020 GameZone</p>
+				<p class="copyright">© Copyright 2020 GameZone</p>
 				<p><a class="text_footer col-lg-4" href="{{ route('legal_notice') }}">Mentions Légales</a></p>
 			</div>
 		</footer>

@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="card offer_card sm-align-self-center col-sm-12 col-md-6 col-lg-4" style="width: 100%;">
-      <img src="{{ asset('images/restaurant_burger_index.png')}}" class="card-img-top" alt="restaurant américain>
+      <img src="{{ asset('images/restaurant_burger_index.png')}}" class="card-img-top" alt="restaurant américain">
       <div class="card-body title_card">
         <p class="text-center"><a class="offer" href="{{ route('Restaurant.index') }}">Découvrez nos restaurants</a></p>
       </div>

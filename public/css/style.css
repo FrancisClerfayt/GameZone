@@ -114,11 +114,9 @@ footer {
 }
 
 /* Footer */
-.text_footer {
-  color: #F6CD40;
-}
-
-.logo a {
+.text_footer,
+.logo a,
+.copyright {
   color: #F6CD40;
 }
 
