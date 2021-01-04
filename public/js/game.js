@@ -20,9 +20,6 @@ function updateCounts(key, value) {
 
 let game = new Proxy(gameValues, {
 	set: function(target, key, value) {
-		console.log("target : "+target);
-		console.log("key : "+key);
-		console.log("value : "+value);
 		target[key] = value;
 		updateCounts(key, value);
 		return true;
