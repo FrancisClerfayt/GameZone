@@ -7,7 +7,7 @@
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
-	<title>{{ config('app.name', 'Laravel') }}</title>
+	<title>@yield('title')</title>
 
 	<!-- Scripts -->
 	<script src="{{ asset('js/app.js') }}" defer></script>
@@ -51,7 +51,7 @@
 								Infos
 							</a>
 						</li>
-						<li class="nav-item col">
+						<li class="nav-item col-3">
 							<a href=" {{ route('home') }} ">
 								<img class="logo_header" src="{{ asset('images/logo_gamezone.png')}}" alt="logo GameZone le parc d'attraction entièrement dédié aux jeux-vidéo">
 							</a>
@@ -67,10 +67,18 @@
 									Préparer votre visite
 								</a>
 								<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-									<a class="dropdown-item btn" href="{{ route('geolocalisation') }}">Se rendre au parc</a>
-									<a class="dropdown-item btn" href="{{ route('Tarifs.index') }}">Tarifs et billeteries</a>
-									<a class="dropdown-item btn" href="{{ route('calendar') }}">Horaires et calendrier</a>
-									<a class="dropdown-item btn" href="{{ route('Restaurant.index') }}">Nos restaurants</a>
+									<a class="dropdown-item btn" href="{{route('geolocalisation')}}">
+										Se rendre au parc
+									</a>
+									<a class="dropdown-item btn" href="{{route('tarifs') }}">
+										Tarifs et billeteries
+									</a>
+									<a class="dropdown-item btn" href="{{route('calendar')}}">
+										Horaires et calendrier
+									</a>
+									<a class="dropdown-item btn" href="{{route('Restaurant.index')}}">
+										Nos restaurants
+									</a>
 								</div>
 							</div>
 						</li>
@@ -147,7 +155,7 @@
 				<div class="info text-center col-sm-12 col-md-12 col-lg-4">
 					<ul>
 						<li><a class="text_footer" href="{{ route('info') }}">A propos du parc</a></li>
-						<li><a class="text_footer" href="{{ route('Recrute.index') }}">On recrute</a></li>
+						<li><a class="text_footer" href="{{ route('recrute') }}">On recrute</a></li>
 						<li><a class="text_footer" href="">Dans la presse</a></li>
 						<li><a class="text_footer" href="tel:0859620859">Nous contacter</a></li>
 					</ul>

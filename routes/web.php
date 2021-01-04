@@ -20,26 +20,20 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index')->name('loggedHome');
 Route::get('/map', 'HomeController@map')->name('map');
 Route::get('/game', 'HomeController@game')->name('miniGame');
 Route::get('/calendar', 'HomeController@calendar')->name('calendar');
 Route::get('/info', 'HomeController@info')->name('info');
+Route::get('/recrute', 'HomeController@recrute')->name('recrute');
+Route::get('/tarifs', 'HomeController@tarifs')->name('tarifs');
 Route::get('/admin', 'HomeController@admin')->name('admin');
-Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
-Route::get('/terms_of_sales','TermsOfSales@index')->name('terms_of_sales');
+Route::get('/legalNotice','HomeController@legalNotice')->name('legal_notice');
+Route::get('/terms_of_sales','HomeController@termsOfSales')->name('terms_of_sales');
 Route::get('/geolocalisation', 'HomeController@geolocalisation')->name('geolocalisation');
+Route::get('/adminAttraction', 'AttractionController@adminIndex')->name('adminAttraction');
 
-Route::resource('Restaurant', 'RestaurantController');
 Route::resource('Attraction', 'AttractionController');
-Route::get('Attraction/adminIndex', 'AttractionController@adminIndex')->name('Attraction.adminIndex');
-Route::resource('User', 'UserController');
-Route::get('/legalNotice','LegalNoticeController@index')->name('legal_notice');
+Route::resource('Restaurant', 'RestaurantController');
 Route::resource('Product', 'ProductController');
+Route::resource('User', 'UserController');
 Route::resource('Cart', 'CartController');
-
-Route::get('/terms_of_sales','TermsOfSales@index')->name('terms_of_sales');
-
-Route::resource('Tarifs', 'TarifsController');
-
-Route::resource('Recrute', 'RecruteController');
