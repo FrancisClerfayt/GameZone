@@ -13,43 +13,55 @@ class HomeController extends Controller
   */
   public function __construct()
   {
-
+    $this->middleware(['auth', 'verified']);
   }
-
+  
   /**
   * Show the application dashboard.
   *
   * @return \Illuminate\Contracts\Support\Renderable
   */
-  public function index()
-  {
+  public function index() {
     return view('home');
   }
-
-  public function map(){
+  
+  public function map() {
     return view('map');
   }
-
-
-  public function game(){
+  
+  public function game() {
     return view('game');
   }
-
-  public function admin(){
+  
+  public function admin() {
     return view('admin');
   }
-
-  public function geolocalisation(){
+  
+  public function geolocalisation() {
     return view('geolocalisation');
   }
+  
+  public function info() {
+    return view('info');
+  }
+  
+  public function calendar() {
+    return view('calendar');
+  }
+  
+  public function termsOfSales() {
+    return view('terms_of_sales');
+  }
+  
+  public function legalNotice() {
+    return view('legalNotice');
+  }
 
-  public function info()
-    {
-        return view('info');
-    }
+  public function recrute() {
+    return view('recrute');
+  }
 
-    public function calendar()
-    {
-        return view('calendar');
-    } 
+  public function tarifs() {
+    return view('tarifs');
+  }
 }

@@ -53,7 +53,9 @@ footer {
 }
 
 .logo_header {
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 50%;
+  z-index: 999;
 }
 
 .userAvatar {
@@ -512,9 +514,6 @@ footer {
   font-size: 1.5em;
 } */
 
-.gril_footer {
-  margin: 8em auto 0 5em 6%;
-}
 /* le page restaurants commence ci-desous */
 .first_titre_r {
   text-align: center;
@@ -591,9 +590,6 @@ footer {
 .text_restaurant_i {
   margin: 3em 6% 5em;
 }
-.gril_footer {
-  margin: 12em auto 0 5em;
-}
 .actuality {
   font-size: 18px;
 }
@@ -662,10 +658,6 @@ footer {
   margin: 3em auto;
 }
 
-.gril_footer {
-  margin: 12em auto 0 5em;
-}
-
 .tickets_price {
   background-color: #1C1F3D;
   margin-bottom: 5%;
@@ -715,10 +707,6 @@ footer {
   margin-right: 1.5em;
 }
 
-.gril_footer {
-  margin: 12em auto 0 5em;
-}
-
 /* page recrute start  */
 .titre_recrute {
   text-align: center;
@@ -747,8 +735,4 @@ footer {
 .icon_recrute {
   width: 2.5em;
   margin-right: 1.5em;
-}
-
-.legend {
-  margin-left: 5%;
 }

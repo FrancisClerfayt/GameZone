@@ -15,7 +15,7 @@ class RestaurantController extends Controller
 	public function index()
 	{
 		$restaurants = Restaurant::all();
-        return view('restaurant.index',['restaurants' => $restaurants]);
+		return view('restaurant.index',['restaurants' => $restaurants]);
 	}
 	
 	/**
@@ -36,27 +36,15 @@ class RestaurantController extends Controller
 	*/
 	public function store(Request $request)
 	{
-		$request->validate([
-			'name' => 'required',
-			'description' => 'required',
-			'image' => 'required',
-			'menu_adult' => 'required',
-			'menu_child' => 'required',
-		]);
+		$request->validate(['name' => 'required',	'description' => 'required', 'image' => 'required', 'menu_adult' => 'required', 'menu_child' => 'required']);
 		
 		$image = $request->file('image')->store('public/restaurants');
 		$image = substr($image, 7);
-
-		$restaurant = new Restaurant([
-			'name' => $request->get('name'),
-			'description' => $request->get('description'),
-			'image' => $image,
-			'menu_adult' => $request->get('menu_adult'),
-			'menu_child' => $request->get('menu_child')
-		]);
-
+		
+		$restaurant = new Restaurant(['name' => $request->get('name'),'description' => $request->get('description'),'image' => $image,'menu_adult' => $request->get('menu_adult'),'menu_child' => $request->get('menu_child')]);
+		
 		$restaurant->save();
-
+		
 		return redirect()->route('admin')->with('message', 'Le restaurant à bien été ajouté');
 	}
 	

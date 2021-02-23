@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cart extends Model
 {
-    protected $fillable = [
-        'total', 'user_id'
-    ];
+	protected $fillable = [
+		'total',
+		'user_id'
+	];
 }

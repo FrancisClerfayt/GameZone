@@ -1,18 +1,19 @@
 @extends('layouts.app') 
 
+@section('title', 'GameZone - Nous recrutons')
+
 @section('content')
-<img src="{{ asset('images/gamezone.jpg')}}" alt="game zone" style="width: 100%;">
-<h1 class="titre_recrute mt-4 mb-5">Vous souhaitez nous rejoindre</h1>
-<p class="text_recrute">Notre équipe recrute de temps à autre les postes suivants : personnel de direction, personnel technique, personnel de vente, personnel de service. Si vous êtes intéressé, veuillez nous appeler ou nous envoyer un email.</p>
+<h2 class="titre_recrute">Vous souhaitez nous rejoindre</h2>
+<p class="text_recrute">
+	Notre équipe recrute de temps à autre les postes suivants: personnel de direction, personnel technique, personnel de vente, personnel de service. Si vous êtes intéressé, veuillez nous appeler ou nous envoyer un email.
+</p>
 <div class="contact_recrute">
-<img src="{{ URL::asset('images/icon_phone.png') }}" alt="téléphone" class="icon_recrute">
-<p class="short_text">08 59 62 08 59</p>
+	<img src="{{asset('images/icon_phone.png')}}" alt="icone de téléphone " class="icon_recrute">
+	<a class="short_text" href="tel:+33606006006">0606006006</a>
 </div>
 
 <div class="contact_recrute">
-<img src="{{ URL::asset('images/icon_email.png') }}" alt="enveloppe" class="icon_recrute">
-<p class="short_text">gamezone@gmail.com</p>
+	<img src="{{asset('images/icon_email.png')}}" alt="icone d'enveloppe" class="icon_recrute">
+	<a class="short_text" href="mailto:gamezone@gmail.com">gamezone@gmail.com</a>
 </div>
-
 @endsection
-

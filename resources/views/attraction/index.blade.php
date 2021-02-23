@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'GameZone - Nos attractions')
+
 @section('content')
 
 <img src="{{ asset('images/between_reality_and_virtual.png')}}" alt="virtual reality sentence" style="width: 100%;">
@@ -7,8 +9,6 @@
 <h1 class="mt-4 mb-5">Nos attractions</h1>
 <div class="row justify-content-around">
   @foreach ($attractions as $attraction)
-      
- 
   <div class="card text-white col-lg-5 col-md-10 mx-2 mb-4" >
     <img src="{{ asset('storage/'.$attraction->background_image)}}" class="card-img" alt="{{$attraction->background_image_alt}}" style="height: 500px">
     <div class="card-img-overlay">
