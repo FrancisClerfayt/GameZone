@@ -25,7 +25,7 @@ Route::get('/map', 'HomeController@map')->name('map');
 Route::get('/game', 'HomeController@game')->name('miniGame');
 Route::get('/calendar', 'HomeController@calendar')->name('calendar');
 Route::get('/info', 'HomeController@info')->name('info');
-Route::get('/recrute', 'HomeController@recrute')->name('recrute');
+Route::get('/', 'HomeController@recrute')->name('recrute');
 Route::get('/tarifs', 'HomeController@tarifs')->name('tarifs');
 Route::get('/admin', 'HomeController@admin')->name('admin');
 Route::get('/legalNotice','HomeController@legalNotice')->name('legal_notice');

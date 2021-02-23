@@ -71,9 +71,10 @@ class RestaurantController extends Controller
 	* @param  \App\Restaurant  $restaurant
 	* @return \Illuminate\Http\Response
 	*/
-	public function edit(Restaurant $restaurant)
+	public function edit($id)
 	{
-		//
+		$restaurant = Restaurant::find($id);
+		return view('restaurant.edit', ['Restaurant' => $restaurant]);
 	}
 	
 	/**
@@ -83,9 +84,20 @@ class RestaurantController extends Controller
 	* @param  \App\Restaurant  $restaurant
 	* @return \Illuminate\Http\Response
 	*/
-	public function update(Request $request, Restaurant $restaurant)
+	public function update(Request $request, $id)
 	{
-		//
+		$restaurant = Restaurant::find($id);
+
+		$restaurant->fill(['name', 'description', 'menu_adult', 'menu_child']);
+
+		if($request->hasFile('image')){
+			$image = $request->file('image')->store('public/restaurants');
+			$image = substr($image, 7); // qui enlève 7 caractères sur le path des images restaurant
+			$restaurant->fill(['image' => $image]);
+
+		$restaurant->save();
+
+		return redirect()->route('Restaurant.index')->with('message', 'Le restaurant à bien été modifié');
 	}
 	
 	/**
@@ -94,8 +106,11 @@ class RestaurantController extends Controller
 	* @param  \App\Restaurant  $restaurant
 	* @return \Illuminate\Http\Response
 	*/
-	public function destroy(Restaurant $restaurant)
+	public function destroy($id)
 	{
-		//
+		$restaurant = Restaurant::find($id);
+		$restaurant->delete();
+		
+		return redirect()->route('Restaurant.index')->with('message', 'Le restaurant a bien été supprimé !');
 	}
 }
