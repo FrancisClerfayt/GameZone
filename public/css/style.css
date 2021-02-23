@@ -53,7 +53,9 @@ footer {
 }
 
 .logo_header {
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 50%;
+  z-index: 999;
 }
 
 .userAvatar {

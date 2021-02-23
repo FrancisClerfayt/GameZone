@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('homeLogged');
 Route::get('/map', 'HomeController@map')->name('map');
 Route::get('/game', 'HomeController@game')->name('miniGame');
 Route::get('/calendar', 'HomeController@calendar')->name('calendar');

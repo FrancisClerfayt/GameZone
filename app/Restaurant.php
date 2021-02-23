@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Restaurant extends Model
 {
-    protected $fillable = [
-        'name', 'description', 'image', 'menu_adult', 'menu_child'
-    ];
+	protected $fillable = [
+		'name',
+		'description',
+		'image',
+		'menu_adult',
+		'menu_child'
+	];
 }
