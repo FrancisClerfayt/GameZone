@@ -105,7 +105,7 @@ class AttractionController extends Controller
 		
 		$attraction->save();
 		
-		return redirect()->route('Attraction.index')->with('message', 'L\'attraction à bien été modifié');
+	return redirect()->route('Attraction.index')->with('message', 'L\'attraction à bien été modifié');
 	}
 	
 	/**

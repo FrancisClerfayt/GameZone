@@ -18,6 +18,12 @@ class RestaurantController extends Controller
 		return view('restaurant.index',['restaurants' => $restaurants]);
 	}
 	
+	public function adminIndex()
+	{
+		$restaurants = Restaurant::all();
+		return view ('restaurant.admin',['restaurants'=>$restaurants]);
+	}
+
 	/**
 	* Show the form for creating a new resource.
 	*
@@ -98,8 +104,8 @@ class RestaurantController extends Controller
 		$restaurant->save();
 
 		return redirect()->route('Restaurant.index')->with('message', 'Le restaurant à bien été modifié');
+		}
 	}
-	
 	/**
 	* Remove the specified resource from storage.
 	*
@@ -113,4 +119,5 @@ class RestaurantController extends Controller
 		
 		return redirect()->route('Restaurant.index')->with('message', 'Le restaurant a bien été supprimé !');
 	}
+
 }

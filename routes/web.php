@@ -32,6 +32,7 @@ Route::get('/legalNotice','HomeController@legalNotice')->name('legal_notice');
 Route::get('/terms_of_sales','HomeController@termsOfSales')->name('terms_of_sales');
 Route::get('/geolocalisation', 'HomeController@geolocalisation')->name('geolocalisation');
 Route::get('/adminAttraction', 'AttractionController@adminIndex')->name('adminAttraction');
+Route::get('/adminRestaurant', 'RestaurantController@adminIndex')->name('adminRestaurant');
 
 Route::resource('Attraction', 'AttractionController');
 Route::resource('Restaurant', 'RestaurantController');

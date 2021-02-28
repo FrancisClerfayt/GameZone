@@ -25,7 +25,7 @@
 						<a href="{{route('Restaurant.create')}}" class="btn btn-primary text-secondary mx-4 my-2">
 							Ajouter un restaurant
 						</a>
-						<a href="" class="btn btn-primary text-secondary mx-4 my-2">
+						<a href="{{route('adminRestaurant')}}" class="btn btn-primary text-secondary mx-4 my-2">
 							Modifier un restaurant
 						</a>
 					</div>
